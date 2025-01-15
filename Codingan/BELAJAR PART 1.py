@@ -1,0 +1,1 @@
+print ("Masih Pemula PUHHHH SEPUHHHHHH")
