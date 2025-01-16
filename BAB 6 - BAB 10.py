@@ -146,7 +146,44 @@ print ("Suhu dalam Fahrenheit = ", fahrenheit, "fahrenheit")
 
 print ("Suhu dalam Kelvin = ", kelvin, "kelvin")
 
+print ("")
 
+print ("BAB 8")
+print("------")
+
+print ("\n====Operasi Komparasi====\n")
+
+'''Operasi komparasi adalah operasi yang dimana hasilnya selalu boolean (True or False)
+'''
+'''Jenis-jenis operasi komparasi:
+'''     1. lebih besar dari (>)
+'''         cth: 4 > 2 = True
+'''              1 > 2 = False 
+'''              2 > 2 = False 
+'''     2. kurang dari (<)
+'''         cth: 4 < 2 = False
+'''              1 < 2 = True
+'''              2 < 2 = False 
+'''     3. lebih dari sama dengan (>=)
+'''         cth: 4 >= 2 = True
+'''              1 >= 2 = False 
+'''              2 >= 2 = True
+'''     4. kurang dari sama dengan (<=)
+'''         cth: 4 <= 2 = False
+'''              1 <= 2 = True
+'''              2 <= 2 = True
+'''     5. sama dengan (==)
+'''         cth: 4 == 4 = True
+'''              4 == 2 = False 
+'''     6. tidak sama dengan (!=)
+'''         cth: 4 != 4 = False
+'''              4 != 2 = True 
+'''     7. is
+'''     8. is not
+'''
+'''
+'''
+'''
 
 
 
