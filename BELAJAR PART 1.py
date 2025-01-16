@@ -2,26 +2,26 @@ print("")
 print ("PENDAHULUAN")
 print("------------")
 
-#   ====SHORTCUT====
-#   1. shift + alt + drag 
-#   2. ctrl + D
-#   3. alt + panah atas/bawah
-#   4. shift + ctrl + panah atas/bawah
-
-#BAB 1 (VARIABEL)
-#larangan dalam menulis variable
-#   1. 10data =     (tidak boleh, angka tidak boleh di depan huruf)
-#      data10 =     (boleh)
-#   2. data 10 =    (tidak boleh ada spasi)
-#      data-10 =    (tidak boleh ) 
-#      data_10 =    (boleh)
-#   3. 1000 = 10    (tidak boleh angka)
-#      a = 10       (boleh)
+'''          ====SHORTCUT====            '''    
+'''  1. shift + alt + drag               '''       
+'''  2. ctrl + D                         '''       
+'''  3. alt + panah atas/bawah           '''   
+'''  4. shift + ctrl + panah atas/bawah  '''
 
 print("") # hanya spasi
 
 print("BAB 1")
 print("------")
+
+'''                 ====BAB 1 (VARIABEL)====                           '''                        
+'''larangan dalam menulis variable                                     '''                                                                
+'''   1. 10data =     (tidak boleh, angka tidak boleh di depan huruf)  '''                                            
+'''      data10 =     (boleh)                                          '''                    
+'''   2. data 10 =    (tidak boleh ada spasi)                          '''            
+'''      data-10 =    (tidak boleh )                                   '''        
+'''      data_10 =    (boleh)                                          '''    
+'''   3. 1000 = 10    (tidak boleh angka)                              '''                        
+'''      a = 10       (boleh)                                          '''                                
 
 a = 10
 b = 25 
@@ -36,7 +36,7 @@ print("") # hanya spasi
 
 print("BAB 2")
 print("------")
-#BAB 2 (TIPE DATA)
+'''             ====BAB 2 (TIPE DATA)====            '''
 #   1. Integer adalah tipe data angka tanpa koma atau bilangan bulat. cth: 1, 2, 3
 a = 100
 print ("data = ", a)
@@ -65,7 +65,7 @@ print("") # hanya spasi
 
 print("BAB 3")
 print("------")
-#BAB 3 (TIPE DATA KHUSUS)
+'''             ====BAB 3 (TIPE DATA KHUSUS)====            '''
 #   1. Bilangan kompleks yaitu yang terdiri dari bilangan real dan imajiner 
 e = complex (5,6) # 5 adalah bilangan real, 6 adalah biangan imajiner 
 print ("data = ", e)
@@ -88,7 +88,7 @@ print("") # hanya spasi
 
 print ("BAB 4")
 print("------")
-#BAB 4 (CASTING ATAU MENGUBAH TIPE DATA)
+'''             ====BAB 4 (CASTING ATAU MENGUBAH TIPE DATA)====            '''
 print ("====INTEGER====")
 
 #   1. Mengubah tipe data "integer" ke tipe data lain
@@ -147,12 +147,14 @@ print ("data =", b , ",type =",type (b))
 print ("data =", c , ",type =",type (c))
 print ("data =", d , ",type =",type (d))
 
-print ("")
+print("") # hanya spasi
+
+
+
 
 print ("BAB 5")
 print("------")
-#BAB 5 (INPUT ATAU MENGAMBIL TIPE DATA)
-
+'''             ====BAB 5 (INPUT ATAU MENGAMBIL TIPE DATA)====            '''
 a = input ("Masukkan data = ")
 print ("data = ", a, ", type = ", type (a)) # hasil pasti string
 
@@ -167,6 +169,71 @@ print ("data = ", d, ", type = ", type (d)) # data yang dimasukkan harus integer
 
 e = bool(float(input ("Masukkan data = ")))
 print ("data = ", e, ", type = ", type (e)) # data yang dimasukkan bisa integer bisa float, hasil false jika data yang dimasukkan 0 
+
+print("") # hanya spasi
+
+
+
+
+print ("BAB 6")
+print("------")
+'''             ====BAB 6 (OPERASI ARITMATIKA)====                                  '''
+'''Jenis-jenis operasi:                                                             '''                            
+'''     1. Operasi penjumlahan (+)                                                  '''                                              
+'''     2. Operasi pengurangan (-)                                                  '''                              
+'''     3. Operasi perkalian (*)                                                    '''                          
+'''     4. Operasi pembagian (/)                                                    '''                                  
+'''     5. Operasi eksponen atau pangkat (**)                                       '''                              
+'''     6. Operasi modulus atau sisa pembagian (%)                                  '''                                      
+'''           cth: -) jika 10 / 2 = 5, maka modulus 0                               '''                                                  
+'''                -) jika 5 / 2 = 2.5, maka modulus 1                              '''                                  
+'''                   maksudnya begini, 5 / 2 sama dengan 2 * x = 5                 '''                           
+'''                   anggap x = 2, maka 2 * 2 = 4, tidak bisa menjadi 5,           '''                          
+'''                   jadi dianggap sisa 1 atau modulus 1                           '''
+'''                -) jika 10 / 3 , maka modulus = 1                                '''                        
+'''                   3 * 2 = 9, sisanya 1 atau modulusnya 1                        '''                    
+'''     7. Operasi floor division atau hasil pembagian yang dibulatkan kebawah (//) '''                        
+'''           cth: -) 10 / 3 = 3,333333                                             '''                        
+'''                   10 // 3 = 3                                                   '''                        
+'''                -) 10 / 6 = 1,666666                                             '''                        
+'''                   10 // 6 = 1                                                   '''                        
+'''                                                                                 '''                                    
+'''Prioritas operasi:                                                               '''                            
+'''     1. Tanda kurung ()                                                          '''                            
+'''     2. Eksponen **                                                              '''                            
+'''     3. Perkalian dan teman" (*, /, %, //)                                       '''                            
+'''     4. Penjumlahan dan pengurangan (+, -)                                       '''                            
+                                                                       
+a = 5
+b = 2
+
+#1. Operasi penjumlahan
+c = a + b
+print (a, "+" ,b, "=" ,c)
+
+#2. Operasi pengurangan
+c = a - b
+print (a, "-" ,b, "=" ,c)
+
+#3. Operasi perkalian
+c = a * b
+print (a, "*" ,b, "=" ,c)
+
+#4. Operasi pembagian
+c = a / b
+print (a, "/" ,b, "=" ,c)
+
+#5. Operasi eksponen
+c = a ** b
+print (a, "**" ,b, "=" ,c)
+
+#6. Operasi modulus
+c = a % b
+print (a, "%" ,b, "=" ,c)
+
+#7. Operasi floor division
+c = a // b
+print (a, "//" ,b, "=" ,c)
 
 print ("")
 print ("=======================================")
