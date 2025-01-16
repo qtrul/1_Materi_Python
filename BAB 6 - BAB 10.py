@@ -148,42 +148,123 @@ print ("Suhu dalam Kelvin = ", kelvin, "kelvin")
 
 print ("")
 
+
+'''====================================================='''
+
+
+
 print ("BAB 8")
 print("------")
 
 print ("\n====Operasi Komparasi====\n")
 
-'''Operasi komparasi adalah operasi yang dimana hasilnya selalu boolean (True or False)
-'''
-'''Jenis-jenis operasi komparasi:
-'''     1. lebih besar dari (>)
-'''         cth: 4 > 2 = True
-'''              1 > 2 = False 
-'''              2 > 2 = False 
-'''     2. kurang dari (<)
-'''         cth: 4 < 2 = False
-'''              1 < 2 = True
-'''              2 < 2 = False 
-'''     3. lebih dari sama dengan (>=)
-'''         cth: 4 >= 2 = True
-'''              1 >= 2 = False 
-'''              2 >= 2 = True
-'''     4. kurang dari sama dengan (<=)
-'''         cth: 4 <= 2 = False
-'''              1 <= 2 = True
-'''              2 <= 2 = True
-'''     5. sama dengan (==)
-'''         cth: 4 == 4 = True
-'''              4 == 2 = False 
-'''     6. tidak sama dengan (!=)
-'''         cth: 4 != 4 = False
-'''              4 != 2 = True 
-'''     7. is
-'''     8. is not
-'''
-'''
-'''
-'''
+'''Operasi komparasi adalah operasi yang dimana hasilnya selalu boolean (True or False)                                             '''
+'''                                                                                                                                 '''                         
+'''Jenis-jenis operasi komparasi:                                                                                                   '''                             
+'''     1. lebih besar dari (>)                                                                                                     '''                                                     
+'''         cth: 4 > 2 = True                                                                                                       '''                             
+'''              1 > 2 = False                                                                                                      '''                                 
+'''              2 > 2 = False                                                                                                      '''                                 
+'''     2. kurang dari (<)                                                                                                          '''                         
+'''         cth: 4 < 2 = False                                                                                                      '''                                         
+'''              1 < 2 = True                                                                                                       '''                                                                                                                                          
+'''              2 < 2 = False                                                                                                      '''                                          
+'''     3. lebih dari sama dengan (>=)                                                                                              '''                                                 
+'''         cth: 4 >= 2 = True                                                                                                      '''                                         
+'''              1 >= 2 = False                                                                                                     '''                                           
+'''              2 >= 2 = True                                                                                                      '''                                         
+'''     4. kurang dari sama dengan (<=)                                                                                             '''                                                  
+'''         cth: 4 <= 2 = False                                                                                                     '''                                          
+'''              1 <= 2 = True                                                                                                      '''                                         
+'''              2 <= 2 = True                                                                                                      '''                                         
+'''     5. sama dengan (==)                                                                                                         '''                                      
+'''         cth: 4 == 4 = True                                                                                                      '''                                         
+'''              4 == 2 = False                                                                                                     '''                                           
+'''     6. tidak sama dengan (!=)                                                                                                   '''                                            
+'''         cth: 4 != 4 = False                                                                                                     '''                                          
+'''              4 != 2 = True                                                                                                      '''                                          
+'''     7. is                                                                                                                       '''                    
+'''        is hanya membandingkan objek degan objek                                                                                 '''                                    
+'''   Objek sendiri adalah sesuatu yang memiliki nilai                                                                              '''                                    
+'''   cth:   a = 5, maka a adalah objek yang dimana nilai dari a adalah 5, sedangkan 5 bukan objek tapi "literal" yaitu selain objek'''                                
+'''   Maka a is 5 , tidak bisa karna is hanya membandingkan objek dengan objek, bukan objek dengan literal                          '''                                    
+'''     8. is not                                                                                                                   '''                                        
+'''        is not kebalikan dari is, tapi cara menggunakan nya sama dengan is yaitu membandingkan objek dengan objek                '''                                                        
+
+
+
+b = 10
+c = 5
+
+print( "==== LEBIH BESAR DARI (>)")
+#   1. lebih besar dari (>)
+a = b > 8
+print (b, ">" ,8, "=" ,a)
+a = b > 20
+print (b, ">" ,20, "=" ,a)
+a = b > 10
+print (b, ">" ,10, "=" ,a)
+
+print( "==== KURANG DARI (<)")
+#   2. kurang dari (<)
+a = b < 8
+print (b, "<" ,8, "=" ,a)
+a = b < 20
+print (b, "<" ,20, "=" ,a)
+a = b < 10
+print (b, "<" ,10, "=" ,a)
+
+print( "==== LEBIH DARI SAMA DENGAN (>=)")
+#   3. lebih dari sama dengan >=
+a = b >= 8
+print (b, ">=" ,8, "=" ,a)
+a = b >= 20
+print (b, ">=" ,20, "=" ,a)
+a = b >= 10
+print (b, ">=" ,10, "=" ,a)
+
+print( "==== KURANG DARI SAMA DENGAN (<=)")
+#   4. kurang dari sama dengan <=
+a = b <= 8
+print (b, "<=" ,8, "=" ,a)
+a = b <= 20
+print (b, "<=" ,20, "=" ,a)
+a = b <= 10
+print (b, "<=" ,10, "=" ,a)
+
+print( "==== SAMA DENGAN (==)")
+#   5. sama dengan ==
+a = b == 20
+print (b, "==" ,20, "=" ,a)
+a = b == 10
+print (b, "==" ,10, "=" ,a)
+
+print( "==== TIDAK SAMA DENGAN (!=)")
+#   6. tidak sama dengan !=
+a = b != 20
+print (b, "!=" ,20, "=" ,a)
+a = b != 10
+print (b, "!=" ,10, "=" ,a)
+
+print( "==== is (is)")
+#   6. is
+a = b is c
+print (b, "is" ,c, "=" ,a)
+a = b is b
+print (b, "is" ,b, "=" ,a)
+
+print( "==== is not (is not)")
+#   7.  is not
+a = b  is not c
+print (b, " is not" ,c, "=" ,a)
+a = b  is not b
+print (b, " is not" ,b, "=" ,a)
+
+print ("===============================")
+
+
+
+
 
 
 
