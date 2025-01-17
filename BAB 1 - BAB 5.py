@@ -171,5 +171,6 @@ print ("data = ", d, ", type = ", type (d)) # data yang dimasukkan harus integer
 e = bool(float(input ("Masukkan data = ")))
 print ("data = ", e, ", type = ", type (e)) # data yang dimasukkan bisa integer bisa float, hasil false jika data yang dimasukkan 0 
 
+
 print("") # hanya spasi
 print ("=======================================")

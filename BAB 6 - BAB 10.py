@@ -411,6 +411,7 @@ print ("kurang dari 10 =", ihir)
 anjir = waduh and ihir
 print ("Angka yang anda masukkan =", anjir)
 
+
 print ("===============================")
 
 
