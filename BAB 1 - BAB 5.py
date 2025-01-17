@@ -4,9 +4,10 @@ print("------------")
 
 '''          ====SHORTCUT====            '''    
 '''  1. shift + alt + drag               '''       
-'''  2. ctrl + D                         '''       
-'''  3. alt + panah atas/bawah           '''   
-'''  4. shift + ctrl + panah atas/bawah  '''
+'''  2. alt + drag                       '''       
+'''  3. ctrl + D                         '''       
+'''  4. alt + panah atas/bawah           '''   
+'''  5. shift + ctrl + panah atas/bawah  '''
 
 print("") # hanya spasi
 
