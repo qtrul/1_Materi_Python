@@ -383,33 +383,33 @@ print ("\n====Operasi Logika dan komparasi====\n")
 #   True di +
 #   False di -
 
-input = float(input ("Syarat: \n 1. Angka kurang dari 3 \n 2. Angka lebih dari 10 \nMasukkkan angka: "))
+angka1 = float(input ("Syarat: \n 1. Angka kurang dari 3 \n 2. Angka lebih dari 10 \nMasukkkan angka: "))
 
-kurangdari = (input < 3)
-print ("kurang dari 3 = ", kurangdari)
+kurang_dari = (angka1 < 3)
+print ("kurang dari 3 = ", kurang_dari)
 
-lebihdari = (input > 10)
-print ("lebih dari 10 = ", lebihdari)
+lebih_dari = (angka1 > 10)
+print ("lebih dari 10 = ", lebih_dari)
 
-output = kurangdari or lebihdari
+huruf = kurang_dari or lebih_dari
 
-print ("angka yang anda masukkan =", output)
+print ("angka yang anda masukkan =", huruf)
 
 print ("")
 #-------3++++++++++10----------
 #   True di +
 #   False di -
 
-anjay = float(input("Syarat\n 1. Angka lebih dari 3\n 2. Angka kurang dari 10\nMasukkan angka: "))
+angka2 = float (input ("Syarat: \n 1. Angka lebih dari 3 \n 2. Angka kurang dari 10 \nMasukkkan angka: "))
 
-waduh = anjay > 3
-print ("lebih dari 3 = ", waduh)
+kurang_dari = angka2 > 3
+print ("lebih dari 3 = ", kurang_dari)
 
-ihir = anjay < 10
-print ("kurang dari 10 =", ihir)
+lebih_dari = angka2 < 10
+print ("kurang dari 10 =", lebih_dari)
 
-anjir = waduh and ihir
-print ("Angka yang anda masukkan =", anjir)
+huruf2 = kurang_dari and lebih_dari
+print ("Angka yang anda masukkan =", huruf2)
 
 
 print ("===============================")
