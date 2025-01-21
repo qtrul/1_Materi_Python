@@ -277,27 +277,48 @@ print("------")
 
 print ("\n====Operasi Logika atau Boolean====\n")
 
-'''Jenis-jenis operasi logika                                                                                           '''
-'''     1. not                                                                                                          '''                                                    
-'''         not adalah kebalikan, jika a = True maka b = False. Yang artinya a not b atau True not False                '''                                        
-'''     2. or                                                                                                           '''                                        
-'''         jika ada pilihan True or False hasilnya akan True, intinya dia akan False jika kedua pilihannya itu False.  '''                        
-'''       cth: True or False hasilnya True                                                                              '''                                
-'''            True or True hasilnya True                                                                               '''                                    
-'''            False or False hasilnya False                                                                            '''                                        
-'''     3, and                                                                                                          '''                    
-'''         and adalah kebalikan dari or, jika ada pilihan True and False hasilnya akan False,                          '''                                                    
-'''       intinya dia akan True jika kedua pilihannya itu True.                                                         '''                            
-'''       cth: True and False hasilnya False                                                                            '''                                    
-'''            True and True hasilnya True                                                                              '''                                    
-'''            False and False hasilnya False                                                                           '''                                    
-'''     4. xor                                                                                                          '''                                        
-'''         Jika True xor False hasilnya False, jika True xor True atau False xor False maka hasilnya True,             '''                                        
-'''       intinya dia akan True jika pilihannya berbeda, dan akan False jika pilihannya sama                            '''                                    
-'''       cth: True xor True hasilnya False                                                                             '''                                        
-'''            False xor False hasilnya False                                                                           '''                                    
-'''            True xor False hasilnya True                                                                             '''                                                    
-'''            False xor True hasilnya True                                                                             '''                                        
+#Jenis-jenis operasi logika                                                                                          
+#
+#     Operator AND
+# True and True    # Hasilnya: True
+# False and False  # Hasilnya: False
+# True and False   # Hasilnya: False
+# False and True   # Hasilnya: False
+#
+#     Operator OR
+# True or True     # Hasilnya: True
+# False or False   # Hasilnya: False
+# True or False    # Hasilnya: True
+# False or True    # Hasilnya: True
+#
+#     Operator XOR (Exclusive OR)
+# True ^ True      # Hasilnya: False
+# False ^ False    # Hasilnya: False
+# True ^ False     # Hasilnya: True
+# False ^ True     # Hasilnya: True
+#
+#     Operator NOT
+# not True         # Hasilnya: False
+# not False        # Hasilnya: True
+#
+#     Operator OR NOT
+# True or not True   # Hasilnya: True 
+# False or not False # Hasilnya: True 
+# True or not False  # Hasilnya: True
+# False or not True  # Hasilnya: False 
+#
+#     Operator AND NOT
+# True and not True   # Hasilnya: False
+# False and not False # Hasilnya: False 
+# True and not False  # Hasilnya: True
+# False and not True  # Hasilnya: False
+
+
+
+
+
+
+
 
 #   NOT 
 a = True
@@ -413,16 +434,3 @@ print ("Angka yang anda masukkan =", huruf2)
 
 
 print ("===============================")
-
-
-
-
-
-
-
-
-
-
-
-
-
