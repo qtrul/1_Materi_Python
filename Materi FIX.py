@@ -28,6 +28,10 @@ print("") # hanya spasi
 ====BAB 12 (PENGENALAN STRING) 
 ====BAB 13 (OPERASI DAN MANUPULASI STRING)
 ====BAB 14 (OPERATOR DALAM BENTUK METODE)
+====BAB 15 (FORMAT STRING)
+====BAB 16 (STRING WIDTH AND MULTILINE)
+====BAB 17 (DATE AND TIME)
+====BAB 18 (ID AND ELSE STATEMENT)
 
 '''
 
@@ -1567,6 +1571,456 @@ print ("|",tengah,"|")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 15")
+print("------")
+
+'''           ====BAB 15 (FORMAT STRING)====
+''' 
+
+# 1. string
+
+nama = "ghois"
+format_str = f"Nama = {nama}"
+print (format_str)
+
+print ("------------------------------\n")
+
+# 2. angka
+
+angka = 150.567898765
+format_str = f"Angka = {angka}"
+print (format_str)
+
+print ("------------------------------\n")
+
+# 3. boolean
+
+boolean = True
+format_str = f"Boolean = {boolean}"
+print (format_str)
+
+print ("------------------------------\n")
+
+# 4. bilangan bulat 
+
+angka = 150
+format_str = f"Angka = {angka}"
+print (format_str)
+
+print ("------------------------------\n")
+
+# 5. bilangan ribuan keatas (untuk memberikan koma pada bilangan ribuan ke atas)
+
+angka = 1500000
+format_str = f"Angka = {angka}"
+print (format_str)
+
+angka = 1500000
+format_str = f"Angka = {angka:,}"
+print (format_str)
+
+angka = 1500000000000000
+format_str = f"Angka = {angka:,}"
+print (format_str)
+
+print ("------------------------------\n")
+
+# 6. bilangan desimal (untuk menunjukkkan berapa angka di belakang koma)
+
+angka = 150.567898765
+format_str = f"Angka = {angka:.2f}"
+print (format_str)
+
+angka = 150.567898765
+format_str = f"Angka = {angka:.3f}"
+print (format_str)
+
+angka = 150.567898765
+format_str = f"Angka = {angka:.6f}"
+print (format_str)
+
+print ("------------------------------\n")
+
+# 7. menampilkan leading zero
+
+'''
+- maksud format ini {angka:10.3f} adalah:
+
+10 = jumlah karakter 
+3 = jumlah angka di belakang desimal 
+f = format
+
+- maksud format ini {angka:010.3f} adalah:
+
+0 = karakter yang kosong di ganti dengan 0
+10 = jumlah karakter 
+3 = jumlah angka di belakang desimal 
+f = format
+'''
+
+angka = 150.56789
+format_str = f"Angka = |{angka:10.3f}|"
+print (format_str)
+
+angka = 150.56789
+format_str = f"Angka = |{angka:20.3f}|"
+print (format_str)
+
+angka = 150.56789
+format_str = f"Angka = |{angka:010.3f}|"
+print (format_str)
+
+angka = 150.56789
+format_str = f"Angka = |{angka:020.3f}|"
+print (format_str)
+
+print ("------------------------------\n")
+
+# 8. menampilkan angka plus dan minus 
+
+angka_minus = -10.12345
+angka_plus = 10.12345
+format_minus = f"minus = {angka_minus:+.2f}"
+format_plus = f"plus = {angka_plus:+.5f}"
+print (format_minus)
+print (format_plus)
+
+print ("------------------------------\n")
+
+# 9. memformat persen 
+
+presentase = 0.025
+format_persen = f"persen = {presentase:%}"
+print (format_persen)
+
+presentase = 0.025
+format_persen = f"persen = {presentase:.2%}"
+print (format_persen)
+
+presentase = 0.025
+format_persen = f"persen = {presentase:.4%}"
+print (format_persen)
+
+print ("------------------------------\n")
+
+# 10. melakukan operasi aritmatika di dalam placeholder 
+
+harga = 5000
+jumlah = 10
+
+format_harga = f"Harga pesanan = Rp{harga:,},00"
+format_jumlah = f"Jumlah pesanan = {jumlah} pesanan\n"
+format_harga_total = f"Harga total = Rp{harga*jumlah:,},00"
+print (format_harga)
+print (format_jumlah)
+print (format_harga_total)
+
+print ("------------------------------\n")
+
+# 11. format angka lain (binary, octal, hexadecimal)
+
+angka = 255
+format_binary = f"binary = {bin(angka)}"
+format_octal = f"octal = {oct(angka)}"
+format_hexadecimal = f"hexadecimal = {hex(angka)}"
+print (format_binary)
+print (format_octal)
+print (format_hexadecimal)
+
+print ("------------------------------\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 16")
+print("------")
+
+'''           ====BAB 16 (STRING WIDTH AND MULTILINE)====
+''' 
+
+# 1. data
+
+data_nama = 'ghois ahmad'
+data_umur = 19
+data_berat_badan = 65.567
+data_tinggi_badan = 165
+
+# 2. string standart 
+
+print (5*'=', "DATA STRING", '='*5)
+
+data_string = f"Nama = {data_nama} Umur = {data_umur} Berat badan = {data_berat_badan} Tinggi badan = {data_tinggi_badan}"
+print (data_string)
+print ('\n')
+
+# 3. string multiline 
+
+print (5*'=', "DATA STRING", '='*5)
+
+data_string = f"Nama = {data_nama} \nUmur = {data_umur} \nBerat badan = {data_berat_badan} \nTinggi badan = {data_tinggi_badan}"
+print (data_string)
+
+# 4. string triple multiline
+
+print (5*'=', "DATA STRING", '='*5)
+
+data_string = f"""
+Nama = {data_nama} 
+Umur = {data_umur} 
+Berat badan = {data_berat_badan} 
+Tinggi badan = {data_tinggi_badan}
+"""
+print (data_string)
+
+# 5. mengatur lebar  
+
+print (5*'=', "DATA STRING", '='*5)
+
+data_string = f"""
+Nama         = {data_nama:>11} 
+Umur         = {data_umur:>11} 
+Berat badan  = {data_berat_badan:>11} 
+Tinggi badan = {data_tinggi_badan:>11}
+"""
+print (data_string)
+
+data_string = f"""
+Nama         = {data_nama:>15} 
+Umur         = {data_umur:>15} 
+Berat badan  = {data_berat_badan:>15} 
+Tinggi badan = {data_tinggi_badan:>15}
+"""
+print (data_string)
+
+data_string = f"""
+Nama         = {data_nama:>8} 
+Umur         = {data_umur:>8} 
+Berat badan  = {data_berat_badan:>8} 
+Tinggi badan = {data_tinggi_badan:>8}
+"""
+print (data_string)
+
+data_string = f"""
+Nama         = {data_nama:<11} 
+Umur         = {data_umur:<11} 
+Berat badan  = {data_berat_badan:<11} 
+Tinggi badan = {data_tinggi_badan:<11}
+"""
+print (data_string)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 17")
+print("------")
+
+'''           ====BAB 17 (DATE AND TIME)====
+''' 
+
+# tanggal, bulan, tahun, dan hari ini 
+
+import datetime as dt
+
+hari_ini = dt.date.today()
+print (f"sekarang tanggal\n: {hari_ini}, Hari: {hari_ini:%A}")
+
+print ("------------------------------\n")
+
+# tanggal, bulan, tahun yang di inputkan
+
+tanggal = dt.date(2004,6,24)
+print (f"Ulang tahun saya adalah\n: {tanggal}, Hari: {tanggal:%A}")
+
+print ("------------------------------\n")
+
+# tanggal,  bulan, tahun lahir saya
+
+print (f"Harap masukkan tannggal, bulan, \ndan tahun lahir anda")
+tanggal = int(input("Tanggal \t= "))
+bulan = int(input("Bulan \t\t= "))
+tahun = int(input("Tahun \t\t= "))
+
+tanggal_lahir = dt.date(tahun,bulan,tanggal)
+print (f"Tanggal lahir anda \nadalah\t: {tanggal_lahir}\nDi hari : {tanggal_lahir:%A}")
+
+# menghitung umur 
+
+umur_hari = hari_ini - tanggal_lahir
+umur_tahun = umur_hari / 365
+umur = umur_tahun.days
+print (f"Anda sekarang berusia \n\t: {umur} tahun")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 18")
+print("------")
+
+'''           ====BAB 18 (ID AND ELSE STATEMENT)====
+''' 
+
+nama = input('Siapa kau ??? : ')
+
+if nama == "gois":
+    print('hai gois kamu ganteng banget sihhhhh')
+else:
+    if nama == "gok":
+        print('RAWRRRRRRRRRRRRR')
+    else:
+        print('kamu bukan gois ah ga asik')
+print('terima kasih')
 
 
 print ("=======================================")
