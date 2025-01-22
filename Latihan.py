@@ -1,3 +1,7 @@
+'''
+                        ====LATIHAN 1====
+''' 
+
 #-----------0++++++++++5-------------8++++++++++++++11---------------
 # x akan True jika x bernilai di antara 0 - 5
 # x juga akan True jika x bernilai di antara 8 - 11
