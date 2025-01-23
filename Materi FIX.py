@@ -31,9 +31,30 @@ print("") # hanya spasi
 ====BAB 15 (FORMAT STRING)
 ====BAB 16 (STRING WIDTH AND MULTILINE)
 ====BAB 17 (DATE AND TIME)
-====BAB 18 (ID AND ELSE STATEMENT)
+====BAB 18 (IF AND ELSE STATEMENT)
+====BAB 19 (ELIF = else if STATEMENT)
+====BAB 20 (MEMBUAT KALKULATOR SEDERHANA)
+====BAB 21 (FOR LOOP (PERULANGAN)
+====BAB 22 (WHILE LOOP)
+====BAB 23 (CONTINUE AND PASS)
+====BAB 24 (BREAK)
+====BAB 25 (LATIHAN LOOP (FOR AND WHILE))
+====BAB 26 (LATIHAN MEMBUAT BANGUN DATAR MENGGUNAKAN LOOP)
+====BAB 27 (LIST)
+====BAB 28 (MANIPULASI LIST)
 
 '''
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,6 +110,17 @@ b = 25
 print ("a" , "b")
 
 print("") # hanya spasi
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,6 +219,25 @@ print("") # hanya spasi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print("BAB 3")
 print("------")
 '''             ====BAB 3 (TIPE DATA KHUSUS)====            '''
@@ -204,6 +255,26 @@ print ("data = ", f)
 print ("- bertipe = ", type (f))
 
 print("") # hanya spasi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -344,6 +415,26 @@ print("") # hanya spasi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 5")
 print("------")
 '''             ====BAB 5 (INPUT ATAU MENGAMBIL TIPE DATA)====            '''
@@ -363,6 +454,23 @@ e = bool(float(input ("Masukkan data = ")))
 print ("data = ", e, ", type = ", type (e)) # data yang dimasukkan bisa integer bisa float, hasil false jika data yang dimasukkan 0 
 
 print("") # hanya spasi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -464,6 +572,22 @@ c = a // b
 print (a, "//" ,b, "=" ,c)
 
 print ("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -630,6 +754,20 @@ print ("")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 8")
 print("------")
 
@@ -738,6 +876,20 @@ a = b  is not b
 print (b, " is not" ,b, "=" ,a)
 
 print ("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -931,6 +1083,21 @@ print ("")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 10")
 print("------")
 
@@ -968,6 +1135,21 @@ print ("kurang dari 10 =", lebih_dari)
 
 huruf2 = kurang_dari and lebih_dari
 print ("Angka yang anda masukkan =", huruf2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1099,6 +1281,21 @@ print ("")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 12")
 print("------")
 
@@ -1157,6 +1354,25 @@ print ("""
     jurusan = teknik kimia
     asal = pasuruan
        """)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1310,6 +1526,37 @@ jumlah = data.count("e")
 print ("jumlah e dalam", data, "=", jumlah)
 jumlah = data.count("b")
 print ("jumlah b dalam", data, "=", jumlah)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1609,6 +1856,20 @@ print ("|",tengah,"|")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 15")
 print("------")
 
@@ -1814,6 +2075,15 @@ print ("------------------------------\n")
 
 
 
+
+
+
+
+
+
+
+
+
 print ("BAB 16")
 print("------")
 
@@ -1931,6 +2201,20 @@ print (data_string)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 17")
 print("------")
 
@@ -2005,10 +2289,25 @@ print (f"Anda sekarang berusia \n\t: {umur} tahun")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 18")
 print("------")
 
-'''           ====BAB 18 (ID AND ELSE STATEMENT)====
+'''           ====BAB 18 (IF AND ELSE STATEMENT)====
 ''' 
 
 nama = input('Siapa kau ??? : ')
@@ -2021,6 +2320,1225 @@ else:
     else:
         print('kamu bukan gois ah ga asik')
 print('terima kasih')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 19")
+print("------")
+
+'''           ====BAB 19 (ELIF = else if STATEMENT)====
+''' 
+
+nama = input ("Siapa nama mu = ")
+
+if nama == "gois":
+    print ("hai gantengggggggggg")
+elif nama == 'aray':
+    print ("hai cantikkkkkkkkkk")
+elif nama == 'dapin':
+    print ("hai dapinnnnnnnnnn")
+elif nama == 'ima':
+    print ("hai imaaaaaaaaaaaaa")
+elif nama == 'alysia':
+    print ("hai alysiaaaaaaaaaaaa")
+elif nama == 'maul':
+    print ("hai maullllllllll")
+elif nama == 'imel':
+    print ("hai imelllllllllllll")
+elif nama == 'firgi':
+    print ("hai firgiiiiiiiiiiiiiiii")
+else:
+    print ("kamuu siapa???")
+print ("terima kasih")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 20")
+print("------")
+
+'''           ====BAB 20 (MEMBUAT KALKULATOR SEDERHANA)====
+''' 
+
+print (20*'=')
+print('KALKULATOR SEDERHANA')
+print (20*'=','\n')
+
+angka_1 = float(input('Masukkan angka 1: '))
+angka_2 = float(input('Masukkan angka 2: '))
+operator = input('''Pilihan operator:
+    1. penjumlahan (+)
+    2. pengurangan (-)
+    3. perkalian (*)
+    4. pembagian (/)
+note: Harap masukkan operator
+    sesuai dengan yang ada 
+    di dalam kurung
+Masukkan operator: ''')
+
+if operator == '+':
+    hasil = angka_1 + angka_2
+    print(f"\n----------------------\nHasilnya adalah = {hasil}")
+elif operator == '-':
+    hasil = angka_1 - angka_2
+    print(f"\n----------------------\nHasilnya adalah = {hasil}")
+elif operator == '*':
+    hasil = angka_1 * angka_2
+    print(f"\n----------------------\nHasilnya adalah = {hasil}")
+elif operator == '/':
+    hasil = angka_1 / angka_2
+    print(f"\n----------------------\nHasilnya adalah = {hasil}")
+else:
+    print ('\nMasukkan operator yang bener bos,baca note nya terlebih dahulu!!!')
+print('----------------------\n\nTERIMA KASIH BOLO...')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 21")
+print("------")
+
+'''           ====BAB 21 (FOR LOOP (PERULANGAN))====
+''' 
+
+# ini dengan list
+
+print (7*'=', 'Dengan List', '='*7)
+
+angka_list = [1,2,3,4,5]
+print (angka_list, '\n')
+
+for i in angka_list:
+    print (f'i sekarang bernilai = {i}')
+
+print ('------------------------')
+
+angka_list = [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31]
+print (angka_list, '\n')
+
+for i in angka_list:
+    print (f'i sekarang bernilai = {i}')
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+# ini dengan range
+
+print (7*'=', 'Dengan Range', '='*7)
+
+angka_range = range(5)
+print (angka_range, '\n')
+
+for i in angka_range:
+    print (f'i sekarang bernilai = {i}')
+
+print ('------------------------')
+
+angka_range = range(10)
+print (angka_range, '\n')
+
+for i in angka_range:
+    print (f'i sekarang bernilai = {i}')
+
+print ('------------------------')
+
+angka_range = range(1,5)
+print (angka_range, '\n')
+
+for i in angka_range:
+    print (f'i sekarang bernilai = {i}')
+
+print ('------------------------')
+
+angka_range = range(5,10)
+print (angka_range, '\n')
+
+for i in angka_range:
+    print (f'i sekarang bernilai = {i}')
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+# ini dengan data string
+
+print (4*'=', 'Dengan Data String', '='*4)
+
+data_string = 'anjay kamu bohong'
+
+for huruf in data_string:
+    print (huruf)
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 22")
+print("------")
+
+'''           ====BAB 22 (WHILE LOOP)====
+''' 
+
+angka = 0
+print (f'angka sekarang -> {angka}')
+
+while angka < 5:
+    angka += 1
+    print (f"angka sekarang ---> {angka}")
+    print (f"aduhhhhh ghoissss")
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+angka = 0
+print (f'angka sekarang -> {angka}')
+
+while angka < 10:
+    angka += 1
+    print (f"angka sekarang ---> {angka}")
+    print (f"aduhhhhh ghoissss")
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+angka = 10
+print (f'angka sekarang -> {angka}')
+
+while angka < 1:
+    angka += 1
+    print (f"angka sekarang ---> {angka}")
+    print (f"aduhhhhh ghoissss")
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+angka = 10
+print (f'angka sekarang -> {angka}')
+
+while angka < 12:
+    angka += 1
+    print (f"angka sekarang ---> {angka}")
+    print (f"aduhhhhh ghoissss")
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 23")
+print("------")
+
+'''           ====BAB 23 (CONTINUE AND PASS)====
+''' 
+'''
+                        ====CONTINUE====
+'''
+
+print (10*("="),("PERCOBAAN 1"),("=")*10)
+
+angka = 0
+print (f'angka sekarang ---> {angka}')
+
+while angka < 5:
+    angka += 1
+    print (f'---------------------\nangka sekarang ---> {angka}')
+
+    if angka== 3:
+        print ('ini tiga')
+
+    print ('kuyyy...\n')
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+print (10*("="),("PERCOBAAN 2"),("=")*10)
+
+angka = 0
+print (f'angka sekarang ---> {angka}')
+
+while angka < 5:
+    angka += 1
+    print (f'---------------------\nangka sekarang ---> {angka}')
+
+    if angka== 3:
+        print ('ini tiga')
+        continue # kuyyy... nya tidak akan ditulis atau di skip
+
+    print ('kuyyy...\n')
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+'''
+                        ====PASS====
+'''
+
+print (10*("="),("PERCOBAAN 3"),("=")*10)
+
+angka = 0
+print (f'angka sekarang ---> {angka}')
+
+while angka < 5:
+    angka += 1
+    print (f'---------------------\nangka sekarang ---> {angka}')
+
+    if angka== 3:
+        pass # if nya tidak akandi eksekusi karna ada pass
+
+    print ('kuyyy...')
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 24")
+print("------")
+
+'''           ====BAB 24 (BREAK)====
+''' 
+
+angka = 0
+print (f'angka sekarang ---> {angka}')
+
+while angka < 10:
+    angka += 1
+    print (f'---------------------\nangka sekarang ---> {angka}')
+    print ('kuyyy...')
+
+    if angka== 5:
+        break
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 25")
+print("------")
+
+'''           ====BAB 25 (LATIHAN LOOP (FOR AND WHILE))====
+''' 
+
+sisi = 5
+
+# 1. menggunakan for loop
+
+print (5*("="),("MENGGUNAKAN FOR LOOP"),("=")*5)
+
+biasa = 1
+for i in range(sisi):
+    print ('*'*biasa)
+    biasa += 1
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+# 2. menggunakan while loop
+
+print (4*("="),("MENGGUNAKAN WHILE LOOP"),("=")*4)
+
+biasa = 1
+while True:
+    print ('*'*biasa)
+    biasa += 1
+
+    if biasa > sisi:
+        break
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 26")
+print("------")
+
+'''           ====BAB 26 (LATIHAN MEMBUAT BANGUN DATAR MENGGUNAKAN LOOP)====
+''' 
+
+# 1. membuat segitiga sama sisi
+
+print (5*("="),("SEGITIGA SAMA SISI"),("=")*5)
+
+tinggi = 5
+
+for i in range(1, tinggi + 1):
+    spasi = " " * (tinggi - i)  # Spasi di kiri dan kanan
+    bintang = "*" * (2 * i -1)  # Bintang di tengah
+    print(spasi, bintang, spasi)  # Spasi di kiri dan kanan
+
+print (10*'=', 'Ending', '='*10, '')
+
+tinggi = 5
+
+for i in range(1, tinggi + 1):
+    spasi = "0" * (tinggi - i)  # Spasi di kiri dan kanan
+    bintang = "*" * (2 * i -1)  # Bintang di tengah
+    print(spasi, bintang, spasi)  # Spasi di kiri dan kanan
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+# 2. membuat persegi 
+
+print (10*("="),("PERSEGI"),("=")*10)
+
+sisi = 5
+
+for i in range(sisi):  # Mengulang sebanyak 'sisi'
+    print("* " * sisi)  # Cetak bintang sebanyak 'sisi' di setiap baris
+
+print (10*'=', 'Ending', '='*10)
+
+sisi = 8
+
+for i in range(sisi):  # Mengulang sebanyak 'sisi'
+    print("* " * sisi)  # Cetak bintang sebanyak 'sisi' di setiap baris
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+# 3. membuat persegi panjang
+
+print (7*("="),("PERSEGI PANJANG"),("=")*7)
+
+panjang = 7  # Panjang ke samping
+tinggi = 3   # Tinggi tetap satu baris
+
+# Membuat persegi panjang horizontal
+for i in range(tinggi):
+    print("* " * panjang)
+
+
+print (10*'=', 'Ending', '='*10)
+
+panjang = 3  # Panjang ke samping
+tinggi = 7   # Tinggi tetap satu baris
+
+# Membuat persegi panjang horizontal
+for i in range(tinggi):
+    print("* " * panjang)
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+# 4. membuat belah ketupat
+
+print (7*("="),("BELAH KETUPAT"),("=")*7)
+
+'''
+rumus belah ketupat sama saja dengan rumus segitiga sama sisi 
+cuma ada beberapa penyesuaian, di antaranya:
+    1.  rumus segitiga 
+
+        for i in range(1, tinggi + 1):
+    
+        rumus belah ketupat 
+
+        for i in range(1, setengah + 2):
+        
+    perbedaan +1 dan +2 pada rumus tersebut adalah karna di belah ketupat 
+    nanti banyak barisnya akan di tambah 1, jadi tidak akan sesuai dengan 
+    data yang di input.
+
+    2.  rumus segitiga terbalik sama saja cuma berbeda di:
+            bagian atas:
+
+            for i in range(1, setengah + 2):
+            
+            bagian bawah:
+
+            for i in range(setengah, 0, -1):
+
+        wajib menggunakan  0,-1 karna itu dari setengah(anggap 6), dari 6 
+        kemudian 0 kemudian -1
+'''
+
+# Tinggi belah ketupat (harus ganjil)
+tinggi = 13
+setengah = tinggi // 2
+
+# Bagian atas belah ketupat
+for i in range(1, setengah + 2):
+    spasi = " " * (setengah + 1 - i)
+    bintang = "*" * (2 * i - 1)
+    print(spasi + bintang)
+
+# Bagian bawah belah ketupat
+for i in range(setengah, 0, -1):
+    spasi = " " * (setengah + 1 - i)
+    bintang = "*" * (2 * i - 1)
+    print(spasi + bintang)
+
+print (10*'=', 'Ending', '='*10, '')
+
+tinggi = 13
+setengah = tinggi // 2
+
+# Bagian atas belah ketupat
+for i in range(1, setengah + 2):
+    spasi = "0" * (setengah + 1 - i)
+    bintang = "*" * (2 * i - 1)
+    print(spasi + bintang)
+
+# Bagian bawah belah ketupat
+for i in range(setengah, 0, -1):
+    spasi = "0" * (setengah + 1 - i)
+    bintang = "*" * (2 * i - 1)
+    print(spasi + bintang)
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+# 5. membuat jajar genjang 
+
+print (8*("="),("JAJAR GENJANG"),("=")*8)
+
+# Ukuran jajar genjang
+lebar = 5
+tinggi = 4
+
+# Membuat jajar genjang
+for i in range(tinggi):
+    spasi = " " * (tinggi - i - 1)  # Tambahkan spasi di awal
+    bintang = "*" * lebar
+    print(spasi + bintang)
+
+print (10*'=', 'Ending', '='*10, '')
+
+# Ukuran jajar genjang
+lebar = 5
+tinggi = 4
+
+# Membuat jajar genjang
+for i in range(tinggi):
+    spasi = "0" * (tinggi - i - 1)  # Tambahkan spasi di awal
+    bintang = "*" * lebar
+    print(spasi + bintang)
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 27")
+print("------")
+
+'''           ====BAB 27 (LIST)====
+''' 
+
+# 1. kumpulan data numbers
+
+data_angka = [1,2,3,4,5]
+print (f"{data_angka}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 2. kumpualn data string
+
+data_string = ["gois","aray","dapin","ima","alysia"]
+print (f"{data_string}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 3. kumpulan data boolean 
+
+data_boolean = [True, False, True, False]
+print (f"{data_boolean}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 4. kumpulan data campuran 
+
+data_campuran = [1, 'gois', 'aray', 3, 7, True, 5, 'dapin', False]
+print (f"{data_campuran}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 5. alternatif membuat list 
+
+data_range = range(0,10,2) # (start, stop, step)
+data_list = list(data_range)
+print (f"{data_list}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 6. membuat list dengan for loop
+
+list_for = [i for i in range(0, 6)]
+print (f"{list_for}")
+        # versi pangkat
+list_for = [i**2 for i in range(0, 6)]
+print (f"{list_for}")
+list_for = [i**3 for i in range(0, 6)]
+print (f"{list_for}")
+list_for = [i**10 for i in range(0, 6)]
+print (f"{list_for}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 7. membuat list pake for dan if
+
+list_for = [i for i in range(0, 6) if i != 5] # akan menghilangkan angka 5
+print (f"{list_for}")
+list_for = [i for i in range(0, 6) if i != 2] # akan menghilangkan angka 2
+print (f"{list_for}")
+list_for = [i for i in range(0, 6) if i != 1] # akan menghilangkan angka 1
+print (f"{list_for}")
+list_for = [i for i in range(0, 6) if i%2 == 0] # hanya genap yang di print
+print (f"{list_for}")
+list_for = [i for i in range(0, 6) if i%2 != 0] # hanya ganjil yang di print
+print (f"{list_for}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 28")
+print("------")
+
+'''           ====BAB 28 (MANIPULASI LIST)====
+''' 
+
+# index  0(-3)    1(-2)   2(-1)
+data = ["gois", "aray", "dapin"]
+
+# 1. mengambil data dari list 
+data_0 = data[0]
+print(data_0)
+
+data_terakhir = data[-1]
+print (data_terakhir)
+
+data_aray = data[1]
+print (data_aray)
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 2. mengambil info jumlah data dalam list
+
+data_jumlah = len(data)
+print(f"Panjang data = {data_jumlah}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 3. menambahkan item pada list sesuai posisi
+
+print(f"Data sebelum ditambahkan\n:{data}")
+data.insert(2, "ima")
+print (f"Data setelah ditambahkan\n:{data}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 4. menambahkan item di akhir list
+
+print(f"Data sebelum ditambahkan\n:{data}")
+data.append("alysia")
+print (f"Data setelah ditambahkan\n:{data}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 5. menambah list dengan list 
+
+print(f"Data sebelum ditambahkan\n:{data}")
+data_baru = ["firgi", "radit", "imel"]
+data.extend(data_baru)
+print (f"Data setelah ditambahkan\n:{data}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 6. merubah data
+        # cth merubah data 5 menjadi "andro"
+
+print(f"Data sebelum ditambahkan\n:{data}")
+data[5] = "andro"
+print (f"Data setelah ditambahkan\n:{data}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 7. menghapus data
+
+print(f"Data sebelum ditambahkan\n:{data}")
+data.remove('andro')
+print (f"Data setelah ditambahkan\n:{data}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 8. menghapus data paling belakang 
+
+print(f"Data sebelum ditambahkan\n:{data}")
+data.pop()
+print (f"Data setelah ditambahkan\n:{data}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+# 9. mengeluarkan data paling belakang 
+
+print(f"Data sebelum dikeluarkan\n:{data}")
+data_data = data.pop()
+print (f"Data setelah dikeluarkan\n:{data_data}")
+
+print (10*'=', 'Ending', '='*10, '\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 print ("=======================================")
