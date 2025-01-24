@@ -2,17 +2,18 @@ print("")
 print ("PENDAHULUAN")
 print("------------")
 
-'''          ====SHORTCUT====            '''    
-'''  1. shift + alt + drag               '''       
-'''  2. alt + drag                       '''       
-'''  3. ctrl + D                         '''       
-'''  4. alt + panah atas/bawah           '''   
-'''  5. shift + ctrl + panah atas/bawah  '''
+'''                    ==== SHORTCUT ====                
+     1. shift + alt + drag                      
+     2. alt + drag                              
+     3. ctrl + D                                
+     4. alt + panah atas/bawah              
+     5. shift + ctrl + panah atas/bawah  
+'''
 
-print("") # hanya spasi
+print("-------------------------------------------------------------------------------------------------------------------")
 
 '''
-        JUDUL SETIAP BAB
+                   ==== JUDUL SETIAP BAB ====
 
 ====BAB 1  (VARIABEL)
 ====BAB 2  (TIPE DATA)
@@ -42,8 +43,269 @@ print("") # hanya spasi
 ====BAB 26 (LATIHAN MEMBUAT BANGUN DATAR MENGGUNAKAN LOOP)
 ====BAB 27 (LIST)
 ====BAB 28 (MANIPULASI LIST)
+====BAB 29 (OPERASI LIST)
+====BAB 30 (CARA MENDUPLIKAT LIST)
+====BAB 31 (MEMBUAT LIST DI DALAM LIST
+====BAB 32 (MENDUPLIKAT LIST MENGGUNAKAN DEPP COPY)
+====BAB 33 (LOOPING DARI LIST)
 
 '''
+
+print("-------------------------------------------------------------------------------------------------------------------")
+
+'''
+                        ==== CODE PENTING ====
+
+1. type()  
+   - Fungsi: Mengembalikan tipe data suatu objek.  
+   - Terdapat di **BAB 2** dan beberapa tempat lain.
+
+2. input(prompt)  
+   - Fungsi: Mengambil input dari pengguna.  
+   - Terdapat di **BAB 5** dan beberapa bab lainnya.
+
+3. abs(x)  
+   - Fungsi: Mengembalikan nilai absolut dari angka.  
+   - Terdapat di **BAB 7** (operasi aritmatika).
+
+4. min()  
+    - Fungsi: Mengembalikan nilai minimum dari iterable.  
+    - Terdapat di **BAB 13**.
+
+5. max()  
+    - Fungsi: Mengembalikan nilai maksimum dari iterable.  
+    - Terdapat di **BAB 13**.
+
+6. .count(value)  
+    - Fungsi: Menghitung jumlah kemunculan elemen tertentu dalam string.  
+    - Terdapat di **BAB 13**.
+
+7. ord(char)  
+    - Fungsi: Mengembalikan nilai Unicode dari karakter tertentu.  
+    - Terdapat di **BAB 13**.
+
+8. chr(code)  
+    - Fungsi: Mengembalikan karakter berdasarkan nilai Unicode.  
+    - Terdapat di **BAB 13**.
+
+9. .upper()  
+   - Fungsi: Mengubah string menjadi huruf besar.  
+   - Terdapat di **BAB 14**.
+
+10. .lower()  
+    - Fungsi: Mengubah string menjadi huruf kecil.  
+    - Terdapat di **BAB 14**.
+
+11. .rjust(width, fillchar) 
+    - Fungsi: Meratakan string ke kanan dengan padding.  
+    - Terdapat di **BAB 14**.
+
+12. .ljust(width, fillchar) 
+    - Fungsi: Meratakan string ke kiri dengan padding.  
+    - Terdapat di **BAB 14**.
+
+13. .center(width, fillchar)  
+    - Fungsi: Meratakan string di tengah dengan padding.  
+    - Terdapat di **BAB 14**.
+
+14. .strip(chars)  
+    - Fungsi: Menghapus karakter tertentu dari awal dan akhir string.  
+    - Terdapat di **BAB 14**.
+
+15. .startswith(prefix)  
+    - Fungsi: Mengecek apakah string dimulai dengan prefix tertentu.  
+    - Terdapat di **BAB 14**.
+
+16. .endswith(suffix)  
+    - Fungsi: Mengecek apakah string diakhiri dengan suffix tertentu.  
+    - Terdapat di **BAB 14**.
+
+17. .join(iterable)  
+    - Fungsi: Menggabungkan elemen iterable menjadi string.  
+    - Terdapat di **BAB 14**.
+
+18. .split(separator)  
+    - Fungsi: Memisahkan string menjadi elemen-elemen berdasarkan separator tertentu.  
+    - Terdapat di **BAB 14**.
+
+19. .isspace()` 
+    - Fungsi: Mengecek apakah string hanya berisi karakter spasi.  
+    - Terdapat di **BAB 14**.
+
+20. .isalpha()  
+    - Fungsi: Mengecek apakah string hanya berisi huruf.  
+    - Terdapat di **BAB 14**.
+
+21. .isalnum()  
+    - Fungsi: Mengecek apakah string berisi huruf dan angka tanpa karakter khusus.  
+    - Terdapat di **BAB 14**.
+
+22. .isdecimal()  
+    - Fungsi: Mengecek apakah string hanya berisi angka desimal.  
+    - Terdapat di **BAB 14**.
+
+23. .title()  
+    - Fungsi: Mengubah huruf pertama setiap kata menjadi huruf besar.  
+    - Terdapat di beberapa bagian manipulasi string.
+
+24. .format()  
+    - Fungsi: Memformat string dengan nilai yang diberikan.  
+    - Terdapat di **BAB 15**.
+
+25. range(start, stop, step)  
+    - Fungsi: Mengembalikan urutan angka berdasarkan parameter.  
+    - Terdapat di **BAB 21**.
+
+26. .append()  
+    - Fungsi: Menambahkan elemen baru di akhir list.  
+    - Terdapat di **BAB 28**.
+
+27. .insert(index, value)  
+    - Fungsi: Menyisipkan elemen pada indeks tertentu di list.  
+    - Terdapat di **BAB 28**.
+
+28. .extend(iterable)  
+    - Fungsi: Menambahkan elemen iterable ke akhir list.  
+    - Terdapat di **BAB 28**.
+29. .pop()  
+    - Fungsi: Menghapus elemen terakhir dalam list dan mengembalikannya.  
+    - Terdapat di **BAB 28**.
+
+30. .remove(value)  
+    - Fungsi: Menghapus elemen tertentu dari list.  
+    - Terdapat di **BAB 28**.
+
+31. len()  
+    - Fungsi: Mengembalikan jumlah elemen dalam iterable.  
+    - Terdapat di **BAB 28**.
+                                                                                                                                                                                       
+32. type()  
+    - Fungsi: Mengembalikan tipe data suatu objek.  
+    - Terdapat di **BAB 2** dan beberapa tempat lain.
+
+33. float()  
+    - Fungsi: Mengonversi nilai menjadi tipe float.  
+    - Terdapat di **BAB 4** dan **BAB 5**.
+
+34. int()  
+    - Fungsi: Mengonversi nilai menjadi tipe integer.  
+    - Terdapat di **BAB 4** dan **BAB 5**.
+
+35. bool()  
+    - Fungsi: Mengonversi nilai menjadi boolean.  
+    - Terdapat di **BAB 4**.
+
+36. complex()  
+    - Fungsi: Membuat angka kompleks dari bilangan real dan imajiner.  
+    - Terdapat di **BAB 3**.
+
+37. from ctypes import c_double  
+    - Fungsi: Mengimpor tipe data dari modul `ctypes`.  
+    - Terdapat di **BAB 3**.
+
+38. is  
+    - Fungsi: Membandingkan dua objek apakah memiliki referensi yang sama.  
+    - Terdapat di **BAB 8**.
+
+39. is not  
+    - Fungsi: Mengecek apakah dua objek tidak memiliki referensi yang sama.  
+    - Terdapat di **BAB 8**.
+
+40. and`, `or`, `not  
+    - Fungsi: Operator logika untuk mengoperasikan nilai boolean.  
+    - Terdapat di **BAB 9**.
+
+41.`+`, `-`, `*`, `/`, `//`, `%`, `**  
+    - Fungsi: Operator aritmatika untuk operasi matematika dasar, modulus, dan pangkat.  
+    - Terdapat di **BAB 6**.
+
+42. if`, `elif`, `else  
+    - Fungsi: Struktur kontrol untuk mengatur alur logika berdasarkan kondisi.  
+    - Terdapat di beberapa bagian dalam file Anda.
+
+43. while  
+    - Fungsi: Struktur perulangan untuk mengulang blok kode berdasarkan kondisi.  
+    - Terdapat di **BAB 22**.
+
+44. break  
+    - Fungsi: Menghentikan perulangan lebih awal.  
+    - Terdapat di **BAB 24**.
+
+45. continue  
+    - Fungsi: Melewati iterasi saat ini dan melanjutkan iterasi berikutnya.  
+    - Terdapat di **BAB 23**.
+
+46. pass
+    - Fungsi: Menandai blok kosong tanpa menghasilkan error.  
+    - Terdapat di **BAB 23**.
+
+47. bin()  
+    - Fungsi: Mengonversi bilangan menjadi representasi biner.  
+    - Terdapat di **BAB 15**.
+
+48. oct()  
+    - Fungsi: Mengonversi bilangan menjadi representasi oktal.  
+    - Terdapat di **BAB 15**.
+
+49. hex()  
+    - Fungsi: Mengonversi bilangan menjadi representasi heksadesimal.  
+    - Terdapat di **BAB 15**.
+
+50. datetime.date()  
+    - Fungsi: Membuat objek tanggal dari modul `datetime`.  
+    - Terdapat di **BAB 17**.
+
+51. eval(expression)  
+    - Fungsi: Mengeksekusi ekspresi Python dalam bentuk string.  
+    - Terdapat di bagian evaluasi string dalam file Anda.
+
+52. exec(code)  
+    - Fungsi: Mengeksekusi pernyataan Python dalam bentuk string.  
+    - Terdapat di bagian evaluasi string dalam file Anda.                                                                                                
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -110,6 +372,25 @@ b = 25
 print ("a" , "b")
 
 print("") # hanya spasi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -238,6 +519,26 @@ print("") # hanya spasi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print("BAB 3")
 print("------")
 '''             ====BAB 3 (TIPE DATA KHUSUS)====            '''
@@ -255,6 +556,27 @@ print ("data = ", f)
 print ("- bertipe = ", type (f))
 
 print("") # hanya spasi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -435,6 +757,22 @@ print("") # hanya spasi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 5")
 print("------")
 '''             ====BAB 5 (INPUT ATAU MENGAMBIL TIPE DATA)====            '''
@@ -454,6 +792,24 @@ e = bool(float(input ("Masukkan data = ")))
 print ("data = ", e, ", type = ", type (e)) # data yang dimasukkan bisa integer bisa float, hasil false jika data yang dimasukkan 0 
 
 print("") # hanya spasi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1603,7 +1959,7 @@ print("------")
 Salam = "AssaLAmuAlAiKUm"
 print ("Normal = " + Salam)
 SALAM = Salam.upper()
-print ("Besaa =" + SALAM)
+print ("Besaa = " + SALAM)
 
 print ("------------------------------\n")
 
@@ -2304,6 +2660,19 @@ print (f"Anda sekarang berusia \n\t: {umur} tahun")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 18")
 print("------")
 
@@ -2320,6 +2689,21 @@ else:
     else:
         print('kamu bukan gois ah ga asik')
 print('terima kasih')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2392,6 +2776,26 @@ elif nama == 'firgi':
 else:
     print ("kamuu siapa???")
 print ("terima kasih")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2515,6 +2919,19 @@ print('----------------------\n\nTERIMA KASIH BOLO...')
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 print ("BAB 21")
 print("------")
 
@@ -2594,6 +3011,20 @@ for huruf in data_string:
     print (huruf)
 
 print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3527,6 +3958,799 @@ print (f"Data setelah dikeluarkan\n:{data_data}")
 
 print (10*'=', 'Ending', '='*10, '\n')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 29")
+print("------")
+
+'''           ====BAB 29 (OPERASI LIST)====
+''' 
+
+data_angka = [1,2,1,3,2,1,4,5,3,7,5,4,6,3,3,2,3,2,2,]
+data_nama = ['gois','aray', 'ima', 'dapin', 'alysia']
+
+print (10*("="),("DATA AWAL"),("=")*10)
+print(f"{data_angka}\n{data_nama} ")
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+# 1. mencari banyaknya data
+
+print (10*("="),("JUMLAH DATA"),("=")*10)
+
+jumlah_data_angka = data_angka.count(3) # banyaknya data (3)
+jumlah_data_nama = data_nama.count('gois') # banyaknya data (gois)
+
+print(f"Data angka (3) berjumlah = {jumlah_data_angka}")
+print(f"Data nama (gois) berjumlah = {jumlah_data_nama}")
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+# 2. mengambil posisi data (index)
+
+print (5*("="),("MENGAMBIL POSISI(INDEX) DATA"),("=")*5)
+
+index_aray = data_nama.index('aray')
+print(f'index si aray = {index_aray}')
+index_gois = data_nama.index('gois')
+print(f'index si gois = {index_gois}')
+index_alysia = data_nama.index('alysia')
+print(f'index si alysia = {index_alysia}')
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+# 3. mengurutkan list 
+
+print (5*("="),("MENGURUTKAN POSISI DATA"),("=")*5)
+
+print(f'Data sebelum di urutkan: \n{data_angka}')
+print(f'{data_nama}\n')
+
+data_angka.sort()
+data_nama.sort()
+
+print(f'Data setelah di urutkan: \n{data_angka}')
+print(f'{data_nama}')
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+# 4. membalik urutan list
+
+print (5*("="),("MEMBALIK POSISI DATA"),("=")*5)
+
+print(f'Data sebelum di balik: \n{data_angka}')
+print(f'{data_nama}\n')
+
+data_angka.reverse()
+data_nama.reverse()
+
+print(f'Data setelah di balik: \n{data_angka}')
+print(f'{data_nama}\n')
+
+print (10*'=', 'Ending', '='*10, '\n\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 30")
+print("------")
+
+'''           ====BAB 30 (CARA MENDUPLIKAT LIST)====
+''' 
+
+'''
+ketika kita menduplikat list dengan cara seperti di atas,
+maka kita akan menduplikat list beserta addres nya juga.
+
+Dampaknya negatif nya ketika kita menduplikat sebuah list 
+beserta addres nya maka, ketika kita ingin mengubah list a, 
+list b akan ikut berubah mengikuti perubahan list a.
+
+Sebaliknya jika kita menduplikat list dengan addres yang berbeda
+atau tidak ikut di duplikat. Maka ketika kita ingin mengubah list a, 
+list b akan stay tidak ikut berubah
+'''
+
+# 1. cara duplikat yang salah karna addres nya ikut ke duplikat 
+
+print(14*('='), ('LIST A'), ('=')*14,"")
+
+a = ['ghois', 'aray', 'dapin', 'ima']
+print(f"list a  --------\n= {a}")
+
+b = a
+print(f"list b --------\n= {b}")
+
+print('\n',10*('='), ('ADDRES LIST A'), ('=')*10,)
+
+print("Addres a = ",hex(id(a)))
+print("Addres b = ",hex(id(b)))
+
+print(14*('='), ('Ending'), ('=')*14,"\n\n\n")
+
+
+
+
+
+
+# 2. cara duplikat yang benar agar addres tidak ikut di duplikat
+
+print(14*('='), ('LIST B'), ('=')*14,"")
+
+a = ['ghois', 'aray', 'dapin', 'ima']
+print(f"list a  --------\n= {a}")
+
+b = a.copy()
+print(f"list b --------\n= {b}")
+
+print('\n',10*('='), ('ADDRES LIST B'), ('=')*10,)
+
+print("Addres a = ",hex(id(a)))
+print("Addres b = ",hex(id(b)))
+
+print(14*('='), ('Ending'), ('=')*14)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 31")
+print("------")
+
+'''           ====BAB 31 (MEMBUAT LIST DI DALAM LIST)====
+''' 
+
+# list biasa
+
+print(10*('='), ('LIST BIASA'), ('=')*10,"")
+
+list_biasa = [1,2,3,4]
+print (f"list biasa = {list_biasa}")
+
+print(14*('='), ('Ending'), ('=')*14,"\n\n")
+
+
+
+
+# list gabungan
+
+print(10*('='), ('LIST GABUNGAN'), ('=')*10,"")
+
+list_1 = [1,2]
+list_2 = [3,4]
+list_gabungan = [list_1, list_2]
+
+print(f"List 1 = {list_1}")
+print(f"List 2 = {list_2}")
+print(f"List gabungan = {list_gabungan}")
+
+print(14*('='), ('Ending'), ('=')*14,"\n\n\n")
+
+
+
+
+
+
+# contoh penggunaan list gabungan
+
+print(10*('='), ('LIST GABUNGAN'), ('=')*10,"")
+
+list_1 = ['ghois', 19, 'pasuruan']
+list_2 = ['aray', 21, 'pasuruan']
+list_3 = ['alysia', 20, 'pasuruan']
+list_gabungan = [list_1, list_2, list_3]
+
+print(f"list 1 = {list_1}")
+print(f"list 2 = {list_2}")
+print(f"list 3 = {list_3}")
+print(f"list gabungan = {list_gabungan}")
+
+print(14*('='), ('Ending'), ('=')*14,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 32")
+print("------")
+
+'''           ====BAB 32 (MENDUPLIKAT LIST MENGGUNAKAN DEPP COPY)====
+''' 
+
+# menggunakan copy biasa 
+
+'''
+ketika menggunakan copy biasa kita hanya mengcopy bagian 
+luarnya saja.
+    cth :
+    list 1 = [1,2]
+    list 2 = [3,4]
+    list gabungan 1 = [[1,2],[3,4]]
+
+    list 3 = [6,7]
+    list 4 = [8,9]
+    liat gabungan 2 = [[6,7],[8,9]]
+
+copy biasa hanya mengcopy list gabungan saja, jadi Addres 
+list 1 dan 2 , 3 dan 4 tidak berubah tetap sama. Jadi ketika 
+dibandingkan antara list gabungan 1 dan list gabungan 2 maka 
+Addres nya berbeda, tapi ketika di bandingkan antara list 1 dan 2, 
+list 3 dan 4 maka sama. 
+'''
+
+print(10*('='), ('MENGGUNAKAN COPY BIASA'), ('=')*10,"")
+
+a = ['ghois', 'aray']
+print(f"list a  --------\n= {a}")
+
+b = ['dapin', 'ima']
+print(f"list b --------\n= {b}")
+
+c = ['alysia']
+print(f"list c --------\n= {c}\n")
+
+list_gabungan_1 = [a, b, c]
+print(f"list gabungan 1--------> list a,b,c\n= {list_gabungan_1}")
+
+list_gabungan_2 = list_gabungan_1.copy()
+print(f"list gabungan 2--------> hasil gabungan list 1\n= {list_gabungan_2}")
+
+print('\n',10*('='), ('ADDRES LIST COPY'), ('=')*10,)
+
+print("Addres list gabungan 1 = ",hex(id(list_gabungan_1)))
+print("Addres list gabungan 2 = ",hex(id(list_gabungan_2)), '\n')
+
+print("Addres list a = ",hex(id(list_gabungan_1[0]))) 
+print("Addres list d = ",hex(id(list_gabungan_2[0])),'\n') # list d,e,f adalah list dari list gabungan 2
+
+print("Addres list b = ",hex(id(list_gabungan_1[1]))) 
+print("Addres list f = ",hex(id(list_gabungan_2[1])),'\n') # list d,e,f adalah list dari list gabungan 2
+
+print("Addres list d = ",hex(id(list_gabungan_2[2]))) # list d,e,f adalah list dari list gabungan 2
+print("Addres list a = ",hex(id(list_gabungan_1[2])),'\n') 
+
+print((''),14*('='), ('Ending'), ('=')*14,"\n\n\n")
+
+
+
+
+
+
+
+
+
+# menggunakan deepcopy
+
+from copy import deepcopy
+
+print(10*('='), ('MENGGUNAKAN DEEP COPY'), ('=')*10,"")
+
+a = ['ghois', 'aray']
+print(f"list a  --------\n= {a}")
+
+b = ['dapin', 'ima']
+print(f"list b --------\n= {b}")
+
+c = ['alysia']
+print(f"list c --------\n= {c}\n")
+
+list_gabungan_1 = [a, b, c]
+print(f"list gabungan 1--------> list a,b,c\n= {list_gabungan_1}")
+
+list_gabungan_2 = deepcopy(list_gabungan_1)
+print(f"list gabungan 2--------> hasil gabungan list 1\n= {list_gabungan_2}")
+
+print('\n',10*('='), ('ADDRES LIST COPY'), ('=')*10,)
+
+print("Addres list gabungan 1 = ",hex(id(list_gabungan_1)))
+print("Addres list gabungan 2 = ",hex(id(list_gabungan_2)), '\n')
+
+print("Addres list a = ",hex(id(list_gabungan_1[0]))) 
+print("Addres list d = ",hex(id(list_gabungan_2[0])),'\n') # list d,e,f adalah list dari list gabungan 2
+
+print("Addres list b = ",hex(id(list_gabungan_1[1]))) 
+print("Addres list f = ",hex(id(list_gabungan_2[1])),'\n') # list d,e,f adalah list dari list gabungan 2
+
+print("Addres list d = ",hex(id(list_gabungan_2[2]))) # list d,e,f adalah list dari list gabungan 2
+print("Addres list a = ",hex(id(list_gabungan_1[2])),'\n') 
+
+print((''),14*('='), ('Ending'), ('=')*14,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 33")
+print("------")
+
+'''           ====BAB 33 (LOOPING DARI LIST)====
+''' 
+
+# 1. for loop 
+
+print(10*('='), ('FOR LOOP'), ('=')*10,"")
+
+
+
+kumpulan_angka = [2,10,4,5,9]
+
+for angka in kumpulan_angka:
+    print (f'Data angka = {angka}')
+
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+# 2. for loop and range
+
+print(10*('='), ('FOR LOOP AND RANGE'), ('=')*10,"")
+
+
+
+kumpulan_angka = [2,10,4,5,9]
+
+panjang = len(kumpulan_angka)
+
+for i in range(panjang):
+    print (f'Data angka = {kumpulan_angka[i]}')
+
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+# 3. while loop
+
+print(10*('='), ('WHILE LOOP'), ('=')*10,"")
+
+
+
+kumpulan_angka = [2,10,4,5,9]
+
+panjang = len(kumpulan_angka)
+i = 0
+
+while i < panjang:
+    print (f'Data angka = {kumpulan_angka[i]}')
+    i += 1
+
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+# 4. list comprehension
+
+print(10*('='), ('LIST COMPREHENSION'), ('=')*10,"")
+
+
+
+kumpulan_angka = [2,10,4,5,9]
+
+[print(f'Data angka = {i}') for i in kumpulan_angka ]
+
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+# 5. enumerate
+
+print(10*('='), ('ENUMERATE'), ('=')*10,"")
+
+
+
+kumpulan_angka = [2,10,4,5,9]
+
+for index,data in enumerate(kumpulan_angka):
+    print (f'Data angka {data},\t Index = {index}')
+
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+# 5. mengkuadratkan list menggunakan for loop 
+
+print(10*('='), ('LIST KUADRAT MENGGUNAKAN FOR LOOP'), ('=')*10,"")
+
+
+
+kumpulan_angka = [2,10,4,5,9]
+
+kumpulan_angka_kuadrat = [i**2 for i in kumpulan_angka]
+
+print (f'Data angka asli \t\t= {kumpulan_angka}')
+print (f'Data angka yang di kuadratkan \t= {kumpulan_angka_kuadrat}')
+
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 
 
 
