@@ -48,6 +48,12 @@ print("-------------------------------------------------------------------------
 ====BAB 31 (MEMBUAT LIST DI DALAM LIST
 ====BAB 32 (MENDUPLIKAT LIST MENGGUNAKAN DEPP COPY)
 ====BAB 33 (LOOPING DARI LIST)
+====BAB 34 (LATIHAN LIST SEDERHANA)
+====BAB 35 (TUPLES DAN SETS)
+====BAB 36 (DICTIONARY (dict))
+====BAB 37 (OPERASI PADA DICTIONARY)
+====BAB 38 (LOOPING DICTIONARY)
+====BAB 39 (COPY AND POP DICTIONARY)
 
 '''
 
@@ -4626,7 +4632,7 @@ print("------")
 
 # 1. for loop 
 
-print(10*('='), ('FOR LOOP'), ('=')*10,"")
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 
 
 
@@ -4759,6 +4765,1292 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 34")
+print("------")
+
+'''           ====BAB 34 (LATIHAN LIST SEDERHANA)====
+''' 
+
+list_buku = []
+while True : 
+    print(("\n\n\n"),10*('-'), ('MASUKKAN DATA MATKUL SEMESTER 1'), 10*('-'), ("\n"))
+    nama_matkul = input(f"Nama matkul \t\t= ")
+    Nama_dosen = input(f"Nama dosen pengajar\t= ")
+    print("\n")
+
+    buku_baru = [nama_matkul, Nama_dosen]
+    list_buku.append(buku_baru)
+
+    print(10*('='), ("DATA MATKUL SEMESTER 1"), 10*('='))
+    for index, buku in enumerate(list_buku):
+        print (f"{index+1} | {buku[0]} | {buku[1]}")
+
+    print(("\n\n"),30*('-'))   
+    el_lanjut = input (f"Apakah anda mau melanjutkan? \n( ketik n untuk selesai/ klik enter untuk lanjut )\nMasukkan jawaban anda: ")
+    print(30*('-'))   
+
+    if el_lanjut == "n":
+        break
+        
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 35")
+print("------")
+
+'''           ====BAB 35 (TUPLES DAN SETS)====
+''' 
+
+# list []
+
+a = [1,2,3,4,5]
+print (a)
+
+# tuples ()
+
+'''
+        tuples adalah semacam list cuma tidak bisa diganti atau semua fungsi yang 
+        ada di list tidak bisa digunakan di dalam tuples
+'''
+
+a = (1,2,3,4,5)
+print (a)
+
+# sets {}
+
+'''
+        sets cukup mirip dengan list, bedanya sets tidak bisa digunakan 
+        untuk mencari index 
+'''
+a = {1,2,3,4,5}
+print (a)
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 36")
+print("------")
+
+'''           ====BAB 36 (DICTIONARY (dict))====
+''' 
+
+# ============================= perbedaan dictionary dengan list =============================
+
+'''
+    Perbedaan list dan dictionary adalah pada saat memanggil input nya, 
+list menggunakan index, sedangkan dictionary menggunakan key atau kunci.
+
+    'gs' : 'ghois'
+ketika ingin memanggil ghois menggunakan key nya yaitu gs
+
+    dictionary bisa diisi semua seperti int, float, bool, string, list, bahkan 
+dictionary itu sendiri
+
+'''
+
+# 1. list []
+
+data_list = ['ghois', 'aray', 'dapin']
+print (f"list = {data_list[0]}")
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+# 2. dictionary {}
+
+data_dict = {
+    'key': 'value',
+    'gs' : 'ghois',
+    'ry' : 'aray',
+    'int' : 100,
+    'float' : 100.12345,
+    'boolean' : True,
+    'list' : data_list,
+}
+
+print ("data dictionary =",data_dict['key'])
+print ("data dictionary =",data_dict['gs'])
+print ("data dictionary =",data_dict['ry'])
+print ("data dictionary =",data_dict['int'])
+print ("data dictionary =",data_dict['float'])
+print ("data dictionary =",data_dict['boolean'])
+print ("data dictionary =",data_dict['list'])
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 37")
+print("------")
+
+'''           ====BAB 37 (OPERASI PADA DICTIONARY)====
+''' 
+
+data_dict = {
+    'key': 'value',
+    'gs' : 'ghois',
+    'ry' : 'aray',
+    'int' : 100,
+    'float' : 100.12345,
+    'boolean' : True,
+}
+
+# 1. mencari panjang dictionary 
+
+print((''),10*('='), ('MENCARI PANJANG DICT'), ('=')*10,"")
+
+LENDICT = len(data_dict)
+print(f"Panjang data_dict adalah: {LENDICT}")
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+# 2. mengecek suatu kata kunci ada atau tidak didalam dictionary 
+
+print((''),10*('='), ('MENGECEK SUATU KEY'), ('=')*10,"")
+
+KEY = 'gs'
+CHECKKEY = KEY in data_dict
+print (f"Apakah {KEY} ada didalam data_dict: {CHECKKEY}")
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+# 3. memanggil kata kunci dengan get 
+
+print((''),10*('='), ('MEMANGGIL KATA KUNCI DENGAN GET'), ('=')*10,"")
+
+'''
+    perbedaan memanggil kata kunci dengan get adalah ketika kata kunci yang 
+kita panggil ternyata tidak ada di dalam dictionary, ketika tidak menggunakan 
+get maka dia akan error, tapi ketika menggunakan get dia akan (none) 
+atau bahkan none nya bisa kita ganti sesuka hati  
+'''
+
+        # tanpa get 
+print(data_dict['ry']) 
+print ('------------------------------------------------')
+        # dengan get 
+print(data_dict.get('ry'))
+print(data_dict.get('gs'))
+print(data_dict.get('ab'))
+print(data_dict.get('ab', 'key tidak ada di dalam dictionary'))
+print(data_dict.get('ab', 'key gaono nde dictionary '))
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+# 4. mengupdate data
+
+print((''),10*('='), ('MENGUPDATE DATA'), ('=')*10,"")
+
+print (10*('-'),'data sebelum di update', 10*('-'))
+print (data_dict)
+
+
+
+print (10*('-'),'data setelah di update', 10*('-'))
+
+data_dict.update({'dv':'davin'})
+data_dict.update({'aly':'alysia'})
+data_dict.update({'gs':'goissss'}) # jika data yang di update ternyata sudah ada di dalam dictionary, maka data tersebtu akan di ganti dengan yang baru
+data_dict.update({'ry':'arrayyy'}) 
+print (data_dict)
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+# 5. mendelete data
+
+print((''),10*('='), ('MENDELETE DATA'), ('=')*10,"")
+
+print (10*('-'),'data sebelum didelete', 10*('-'))
+
+print (data_dict)
+
+
+
+print (10*('-'),'data setelah didelete', 10*('-'))
+
+del data_dict['int']
+del data_dict['float']
+del data_dict['boolean']
+del data_dict['key']
+print (data_dict)
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 38")
+print("------")
+
+'''           ====BAB 38 (LOOPING DICTIONARY)====
+''' 
+
+teman_teman = {
+    'is' : 'gois',
+    'ray' : 'aray',
+    'pin' : 'dapin',
+    'im' : 'ima',
+    'lys' : 'alysia'
+}
+
+# looping langsung
+
+print((''),10*('='), ('LOOPING LANGSUNG'), ('=')*10,"")
+
+'''
+    jika di looping langsung maka yang keluar hanya key nya saja, value nya tidak keluar  
+'''
+
+for teman in teman_teman:
+    print (teman)
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+# mengambil key nya saja 
+
+print((''),10*('='), ('MENGAMBIL KEY NYA SAJA'), ('=')*10,"")
+
+keys = teman_teman.keys()
+print (keys)
+
+print(50*('-'))
+
+for key in teman_teman.keys():
+    print (key)
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+# mengambil value nya saja 
+
+print((''),10*('='), ('MENGAMBIL VALUE NYA SAJA'), ('=')*10,"")
+
+value = teman_teman.values()
+print (value)
+
+print(50*('-'))
+
+for value in teman_teman.values():
+    print (value)
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+# mengambil key dan value menggunakan get 
+
+print((''),10*('='), ('MENGAMBIL KEY DAN VALUE MENGGUNAKAN GET'), ('=')*10,"")
+
+'''
+        ketika menggunakan get, yang di dictionary akan keluar key, tapi ketika di loop 
+    yang keluar adalah value 
+'''
+
+keys = teman_teman.keys()
+print (keys)
+
+print(50*('-'))
+
+for key in teman_teman.keys():
+    print (teman_teman.get(key))
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+# mengambil key dan value secara bersamaan 
+
+print((''),9*('='), ('MENGAMBIL KEY DAN VALUE SECARA BERSAMAAN'), ('=')*9,"")
+
+items = teman_teman.items()
+print (items)
+
+print(50*('-'))
+
+for item in teman_teman.items():
+    print (item)
+
+
+print(('\n'),50*('='),('\n'))
+
+
+items = teman_teman.items()
+print (items)
+
+print(50*('-'))
+
+for item,value in teman_teman.items():
+    print (f'item = {item}\t value = {value}')
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 39")
+print("------")
+
+'''           ====BAB 39 (COPY AND POP DICTIONARY)====
+''' 
+
+# copy dictionary
+
+print((''),30*('*'), ('COPY'), ('*')*30,"")
+
+teman_1 = {
+    'is' : 'gois',
+    'ray' : 'aray',
+    'pin' : 'dapin',
+}
+
+teman_2 = teman_1.copy()
+
+print((''),10*('='), ('TEMAN 1 SEBELUM DI UBAH'), ('=')*10,"")
+print(teman_1)
+print((''),10*('='), ('TEMAN 2 SEBELUM DI UBAH'), ('=')*10,"")
+print(teman_2,('\n'))
+
+''' ------------- mengubah item teman_1 saja item teman_2 tetap ------------'''
+
+print((''),10*('='), ('TEMAN 1 SETELAH DI UBAH'), ('=')*10,"")
+
+teman_1 ["pin"] = "jhon"
+print(teman_1)
+
+print((''),10*('='), ('TEMAN 2 SETELAH DI UBAH'), ('=')*10,"")
+
+print(teman_2)
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+# pop dictionary (mengeluarkan item menggunakan key )
+
+print((''),30*('*'), ('POP'), ('*')*30,"")
+
+print((''),10*('='), ('TEMAN 2 SEBELUM DAPIN KELUAR'), ('=')*10,"")
+
+print(teman_2)
+
+mengambil_datadapin = teman_2.pop('pin')
+
+print((''),10*('='), ('TEMAN 2 SETELAH DAPIN KELUAR'), ('=')*10,"")
+
+print(teman_2, '\n')
+print(mengambil_datadapin)
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+# popitem dictionary (mengeluarkan item terakhr)
+
+print((''),30*('*'), ('POP ITEM'), ('*')*30,"")
+
+print((''),10*('='), ('TEMAN 2 SEBELUM ARAY KELUAR'), ('=')*10,"")
+
+print(teman_2)
+
+mengambil_dataaray = teman_2.popitem()
+
+print((''),10*('='), ('TEMAN 2 SETELAH ARAY KELUAR'), ('=')*10,"")
+
+print(teman_2, '\n')
+print(mengambil_dataaray)
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 40")
+print("------")
+
+'''           ====BAB 40 (MULTI KEYS DAN NESTING DICTIONARY)====
+''' 
+
+import datetime
+
+mahasiswa_1 = {
+    'nama' : 'Qotrul Ghoist',
+    'nim' : '0090001',
+    'sks' : '144',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2006,3,18)
+}
+
+mahasiswa_2 = {
+    'nama' : 'Citra Yuana',
+    'nim' : '0090002',
+    'sks' : '144',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2004,6,24)
+}
+
+mahasiswa_3 = {
+    'nama' : 'Rohmatus',
+    'nim' : '0090003',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2006,3,19)
+}
+
+mahasiswa_4 = {
+    'nama' : 'Dapin Jhon',
+    'nim' : '0090004',
+    'sks' : '132',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2002,4,21)
+}
+
+mahasiswa_5 = {
+    'nama' : 'Ridwan Chelse',
+    'nim' : '0090005',
+    'sks' : '120',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_6 = {
+    'nama' : 'Rizwan Shahan Shah',
+    'nim' : '0090006',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_7 = {
+    'nama' : 'Dafa Afandi',
+    'nim' : '0090007',
+    'sks' : '140',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_8 = {
+    'nama' : 'Jepri Nichol',
+    'nim' : '0090008',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_9 = {
+    'nama' : 'Ajeng Dewanti',
+    'nim' : '0090009',
+    'sks' : '140',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2006,3,19)
+}
+
+mahasiswa_10 = {
+    'nama' : 'Pinka Rivka',
+    'nim' : '0090010',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_11 = {
+    'nama' : 'Firgi Asmoro',
+    'nim' : '0090011',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2006,3,19)
+}
+
+mahasiswa_12 = {
+    'nama' : 'Radit Benictus',
+    'nim' : '0090012',
+    'sks' : '120',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_13 = {
+    'nama' : 'Andro Sofyan',
+    'nim' : '0090013',
+    'sks' : '120',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2004,3,19)
+}
+
+mahasiswa_14 = {
+    'nama' : 'Imelya windy',
+    'nim' : '0090014',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_15 = {
+    'nama' : 'Itfinah Khoirun',
+    'nim' : '0090015',
+    'sks' : '120',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2004,3,19)
+}
+
+mahasiswa_16 = {
+    'nama' : 'Marwa Mirwi',
+    'nim' : '0090016',
+    'sks' : '130',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2004,3,19)
+}
+
+mahasiswa_17 = {
+    'nama' : 'Dimas Kuy',
+    'nim' : '0090017',
+    'sks' : '110',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2004,3,19)
+}
+
+mahasiswa_18 = {
+    'nama' : 'Haikal Ramadhan',
+    'nim' : '0090018',
+    'sks' : '130',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2006,3,19)
+}
+
+mahasiswa_19 = {
+    'nama' : 'Rivaldi Muhammad',
+    'nim' : '0090019',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2006,3,19)
+}
+
+mahasiswa_20 = {
+    'nama' : 'Hasna Deandra',
+    'nim' : '0090020',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_21 = {
+    'nama' : 'Cleo Dewanti',
+    'nim' : '0090021',
+    'sks' : '130',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2006,3,19)
+}
+
+mahasiswa_22 = {
+    'nama' : 'Aurora Dewanti',
+    'nim' : '0090022',
+    'sks' : '110',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_23 = {
+    'nama' : 'Abyan Abyin',
+    'nim' : '0090023',
+    'sks' : '120',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2006,3,19)
+}
+
+mahasiswa_24 = {
+    'nama' : 'Getha Pinkandao',
+    'nim' : '0090024',
+    'sks' : '110',
+    'beasiswa' : False,
+    'lahir' : datetime.datetime(2005,3,19)
+}
+
+mahasiswa_25 = {
+    'nama' : 'alfi Alfiansyah',
+    'nim' : '0090025',
+    'sks' : '130',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2007,3,20)
+}
+
+data_mahasiswa = {
+    'MAH001' : mahasiswa_1,
+    'MAH002' : mahasiswa_2,
+    'MAH003' : mahasiswa_3,
+    'MAH004' : mahasiswa_4,
+    'MAH005' : mahasiswa_5,
+    'MAH006' : mahasiswa_6,
+    'MAH007' : mahasiswa_7,
+    'MAH008' : mahasiswa_8,
+    'MAH009' : mahasiswa_9,
+    'MAH0011' : mahasiswa_11,
+    'MAH0012' : mahasiswa_12,
+    'MAH0013' : mahasiswa_13,
+    'MAH0014' : mahasiswa_14,
+    'MAH0015' : mahasiswa_15,
+    'MAH0016' : mahasiswa_16,
+    'MAH0017' : mahasiswa_17,
+    'MAH0018' : mahasiswa_18,
+    'MAH0019' : mahasiswa_19,
+    'MAH0020' : mahasiswa_20,
+    'MAH0021' : mahasiswa_21,
+    'MAH0022' : mahasiswa_22,
+    'MAH0023' : mahasiswa_23,
+    'MAH0024' : mahasiswa_24,
+    'MAH0025' : mahasiswa_25
+}
+
+print(f"|{' KEY':<10}|{' NAMA':<20} |{' NIM':<11} |{' SKS':<7} |{' BEASISWA':<12} |{' LAHIR':<10}")
+print (75*('-'))
+
+for mahasiswa in data_mahasiswa:
+    KEY = mahasiswa
+
+    NAMA = data_mahasiswa [KEY]['nama']
+    NIM = data_mahasiswa [KEY] ['nim']
+    SKS = data_mahasiswa [KEY] ['sks']
+    BEASISWA = data_mahasiswa [KEY] ['beasiswa']
+    LAHIR = data_mahasiswa [KEY] ['lahir'].strftime('%x')
+
+    print(f"|{KEY:<10}| {NAMA:<20}| {NIM:<11}| {SKS:<7}| {BEASISWA:^12}| {LAHIR:<10}")
 
 
 
