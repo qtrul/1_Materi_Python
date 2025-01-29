@@ -64,6 +64,7 @@ print("-------------------------------------------------------------------------
 ====BAB 47 (LATIHAN FUNGSI)
 ====BAB 48 (PENGGUNAAN type HINTS pada fungsi
 ====BAB 49 (PENGGUNAAN *args)
+====BAB 50 (PENGGUNAAN **kwargs)
 
 '''
 
@@ -7352,6 +7353,10 @@ fungsi ('aray', 160, 68)
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
 
+
+
+
+
 # studi kasus
 
 def tambah(*data):
@@ -7368,6 +7373,162 @@ hasil = tambah (10,5,15)
 print (f"hasil = {hasil}")
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system('cls')
+
+print ("BAB 50")
+print("------")
+
+'''           ====BAB 50 (PENGGUNAAN **kwargs)====
+''' 
+
+'''
+     hasil **kwargs selalu dictionary 
+'''
+
+def fungsi(nama, tinggi, berat):
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi ('ghois', 165, 65)
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+# menggunakan **kwargs
+
+def fungsi(**kwargs):
+    nama = kwargs['nama']
+    tinggi = kwargs['tinggi']
+    berat = kwargs['berat']
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi (nama='ghois', tinggi=165, berat=65)
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+# studi kasus 
+
+def math(*args, **kwargs):
+    output = 0
+    if kwargs ["option"] == "tambah":
+        for angka in args:
+            output += angka
+    elif kwargs ["option"] == "kali":
+        output = 1
+        for angka in args:
+            output *= angka
+    else:
+        print("tidak ada operasi")
+
+    return output 
+
+hasil = math(1,2,3,4,5,6,option="tambah")
+print (f"hasil jumlah = {hasil}")
+hasil = math(1,2,3,4,5,6,option="kali")
+print (f"hasil kali = {hasil}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
