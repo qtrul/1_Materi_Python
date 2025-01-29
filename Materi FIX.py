@@ -62,6 +62,8 @@ print("-------------------------------------------------------------------------
 ====BAB 45 (FUNGSI DENGAN RETURN)
 ====BAB 46 (DEFAULT ARGUMEN FUNGSI)
 ====BAB 47 (LATIHAN FUNGSI)
+====BAB 48 (PENGGUNAAN type HINTS pada fungsi
+====BAB 49 (PENGGUNAAN *args)
 
 '''
 
@@ -7109,6 +7111,263 @@ while True:
 print(30*('='), ('Ending'), ('=')*30,"\n\n\n")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+import string
+os.system('cls')
+
+print ("BAB 48")
+print("------")
+
+'''           ====BAB 48 (PENGGUNAAN type HINTS pada fungsi)====
+''' 
+
+'''
+        type hints adalah type data yang digunakan untuk mempermudah ketika meakukan 
+    poject besar dalam python. untuk penggunaan sendiri opsional tapi disarankan 
+    digunakan ketika membuat projek besar. Fungsinya adalah untuk membedakan 
+    setiap class, apakah dia int, float, string, atau boolean.
+'''
+
+# penggunaan type hints 
+
+def sepuluh_pangkat(argument:int) -> int:
+    output = 10**argument
+    return output 
+
+HASIL = sepuluh_pangkat(2)
+print(HASIL)
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+def display(argument:string):
+    print(argument)
+
+display("ghois")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system('cls')
+
+print ("BAB 49")
+print("------")
+
+'''           ====BAB 49 (PENGGUNAAN *args)====
+''' 
+
+def fungsi(nama, tinggi, berat):
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi ('ghois', 165, 65)
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+def fungsi (data_list):
+    data = data_list.copy()
+    nama = data[0]
+    tinggi = data[1]
+    berat = data[2]
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi (['aray', 160, 68])
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+# MENGGUNAKAN *args
+
+def fungsi (*args):
+    nama = args[0]
+    tinggi = args[1]
+    berat = args[2]
+    print(f"{nama} punya tinggi {tinggi} dan berat {berat}")
+
+fungsi ('aray', 160, 68)
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+# studi kasus
+
+def tambah(*data):
+    output = 0
+    for angka in data:
+        output += angka
+
+    return output 
+
+hasil = tambah (1,2,3,4,5,6,7,8,9)
+print (f"hasil = {hasil}")
+
+hasil = tambah (10,5,15)
+print (f"hasil = {hasil}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
 
 
 
