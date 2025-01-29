@@ -54,6 +54,14 @@ print("-------------------------------------------------------------------------
 ====BAB 37 (OPERASI PADA DICTIONARY)
 ====BAB 38 (LOOPING DICTIONARY)
 ====BAB 39 (COPY AND POP DICTIONARY)
+====BAB 40 (MULTI KEYS DAN NESTING DICTIONARY)
+====BAB 41 (LATIHAN DICTIONARY PART 1)
+====BAB 42 (LATIHAN DICTIONARY PART 2)
+====BAB 43 (PENGENALAN FUNGSI)
+====BAB 44 (FUNGSI DENGAN ARGUMENT)
+====BAB 45 (FUNGSI DENGAN RETURN)
+====BAB 46 (DEFAULT ARGUMEN FUNGSI)
+====BAB 47 (LATIHAN FUNGSI)
 
 '''
 
@@ -6051,6 +6059,1054 @@ for mahasiswa in data_mahasiswa:
     LAHIR = data_mahasiswa [KEY] ['lahir'].strftime('%x')
 
     print(f"|{KEY:<10}| {NAMA:<20}| {NIM:<11}| {SKS:<7}| {BEASISWA:^12}| {LAHIR:<10}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import datetime
+import os
+os.system('cls')
+
+print ("BAB 41")
+print("------")
+
+'''           ====BAB 41 (LATIHAN DICTIONARY PART 1)====
+''' 
+
+mahasiswa_template = {
+    'nama' : 'Qotrul Ghoist',
+    'nim' : '0090001',
+    'sks' : '144',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2006,3,18)
+}
+
+data_mahasiswa = {}
+
+print (f"{'MASUKKAN DATA MAHASISWA':^40}")
+print ("-"*40)
+
+mahasiswa = dict.fromkeys(mahasiswa_template.keys())
+mahasiswa_nama = mahasiswa['nama'] = input ('Nama mahasiswa: ')
+mahasiswa_nim = mahasiswa['nim'] = input ('NIM mahasiswa: ')
+mahasiswa_sks = mahasiswa['sks'] = int(input('Jumlah sks mahasiswa: '))
+mahasiswa_bea = mahasiswa['beasiswa'] = bool ('Beasiswa mahasiswa (1/0): ')
+TAHUN_LAHIR = int(input ('Tahun lahir (YYYY): '))
+BULAN_LAHIR = int(input ('Bulan lahir (1-12): '))
+TANGGAL_LAHIR = int(input ('Tanggal lahir (1-31): '))
+mahasiswa_lahir = mahasiswa['lahir'] = datetime.datetime(TAHUN_LAHIR, BULAN_LAHIR, TANGGAL_LAHIR)
+
+
+print(f"|{' NAMA':<20} |{' NIM':<11} |{' SKS':<7} |{' BEASISWA':<12} |{' LAHIR':<10}")
+print (70*('-'))
+print(f"| {mahasiswa_nama:<20}| {mahasiswa_nim:<11}| {mahasiswa_sks:<7}| {mahasiswa_bea:^12}| {mahasiswa_lahir.strftime('%x')}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import datetime
+import os
+import string
+import random
+
+print ("BAB 42")
+print("------")
+
+'''           ====BAB 42 (LATIHAN DICTIONARY PART 2)====
+''' 
+
+mahasiswa_template = {
+    'nama' : 'Qotrul Ghoist',
+    'nim' : '0090001',
+    'sks' : '144',
+    'beasiswa' : True,
+    'lahir' : datetime.datetime(2006,3,18)
+}
+
+data_mahasiswa = {}
+
+
+while True:      
+    os.system('cls')
+    print ("-"*67)
+    print (f"{'MASUKKAN DATA MAHASISWA':^60}")
+    print ("-"*67,'\n')
+
+    mahasiswa = dict.fromkeys(mahasiswa_template.keys())
+    mahasiswa_nama = mahasiswa['nama'] = input ('NAMA\t\t\t: ')
+    mahasiswa_nim = mahasiswa['nim'] = input ('NIM\t\t\t: ')
+    mahasiswa_sks = mahasiswa['sks'] = int(input('Jumlah sks lulus\t: '))
+    TAHUN_LAHIR = int(input ('Tahun lahir (YYYY)\t: '))
+    BULAN_LAHIR = int(input ('Bulan lahir (1-12)\t: '))
+    TANGGAL_LAHIR = int(input ('Tanggal lahir (1-31)\t: '))
+    mahasiswa_lahir = mahasiswa['lahir'] = datetime.datetime(TAHUN_LAHIR, BULAN_LAHIR, TANGGAL_LAHIR)
+
+
+    print (67*('-'))
+    print(f"\n\n\n\n\n\n\n|{'KODE':<8}|{' NAMA':<20} |{' NIM':<11} |{' SKS':<7} |{' LAHIR':<11} |")
+    print (67*('-'))
+
+
+    KEY = ''.join((random.choice(string.ascii_uppercase) for i in range(6)))
+    data_mahasiswa.update({KEY:mahasiswa})
+
+    for mahasiswa in data_mahasiswa:
+        KEY = mahasiswa
+
+        NAMA = data_mahasiswa [KEY]['nama']
+        NIM = data_mahasiswa [KEY] ['nim']
+        SKS = data_mahasiswa [KEY] ['sks']
+        LAHIR = data_mahasiswa [KEY] ['lahir'].strftime('%x')
+
+        print(f"|{KEY:<8}| {NAMA:<20}| {NIM:<11}| {SKS:<7}| {LAHIR:<11}|")
+
+    print(f'\n\n\n----------------------------\nTekan "enter" untuk lanjut \nKlik "n" untuk selesai')
+    is_mareh = input('Mau lanjut kah? ')
+    if is_mareh == "n":
+        break
+print("\n\n\n",35*('='), ('Ending'), ('=')*35,"\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 43")
+print("------")
+
+'''           ====BAB 43 (PENGENALAN FUNGSI)====
+''' 
+
+'''
+        fungsi adalah sebuah kode yang dibuat untuk mempersingkat kode, fungsinya 
+    agar kita tdak mengulang kode yang sama.
+
+    fungsi dalam beberapa bahasa 
+        1. fungsi
+        2. function
+        3. method
+        4. rutin
+        5. sub rutin
+'''
+
+def anjay():
+    print('Perhatian untuk yang bernama supri')
+    print('diharap untuk segerra kembali ke kelas')
+
+anjay(), anjay()
+anjay()
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+def aray():
+    print('aku cinta kamu')
+    print('I LOVE U')
+
+aray()
+aray()
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 44")
+print("------")
+
+'''           ====BAB 44 (FUNGSI DENGAN ARGUMENT)====
+''' 
+
+def Teman_teman(nama):
+    print(f"oi {nama}, lama ga jumpa")
+
+Teman_teman("dapin")
+Teman_teman("ima")
+Teman_teman("alysia")
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+
+
+
+def peserta (list_peserta):
+    list_copy = list_peserta.copy()
+    for list_ini in list_copy:
+        print(f'Yang terhormat {list_ini}')
+
+
+lomba1 = ['aray', 'dapin', 'ima', 'alysia']
+lomba2 = ['lita', 'imel', 'surya', 'bayu']
+lomba3 = ['rizwan', 'ridwan', 'jepri', 'pandi']
+
+
+peserta(lomba1)
+print(20*("-"))
+
+peserta(lomba2)
+print(20*("-"))
+
+peserta(lomba3)
+print(20*("-"))
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print ("BAB 45")
+print("------")
+
+'''           ====BAB 45 (FUNGSI DENGAN RETURN)====
+''' 
+
+# hasil return hanya satu
+
+print(10*('='), ('HASIL RETURN HANYA SATU'), ('=')*10)
+
+def kuadrat(input_angka):
+    hasil = input_angka ** 2
+    return hasil
+
+x = kuadrat(4)
+print(x)
+
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+# hasil return lebih dari satu
+
+print(10*('='), ('HASIL RETURN LEBIH DARI SATU'), ('=')*10)
+print(10*('='), ('YANG DI WAKILKAN PAS'), ('=')*10)
+
+def operasi (angka1, angka2):
+    tambah = angka1 + angka2
+    kurang = angka1 - angka2
+    kali = angka1 * angka2
+    bagi = angka1 / angka2
+    return tambah, kurang, kali, bagi
+
+a,b,c,d = operasi(10,5) # yang mewakilkan harus ada 4 
+
+print(f'hasil tambah = {a}')
+print(f'hasil kurang = {b}')
+print(f'hasil kali = {c}')
+print(f'hasil bagi = {d}')
+
+'''
+        tambah, kurang, kali, dan bagi di wakilkan oleh a,b,c,d tapi 
+    penting ntuk di perhatikan jika ingin mewakilkan hasil, hasil harus 
+    sama dengan jumlah yang harus di wakilkan. contoh jika tambah, 
+    kurang, kali, dan bagi jumlahnya ada 4. maka yang mewakilkan 
+    harus ada 4, kalau kurang atau lebih maka hasil akan error
+'''
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+# hasil return lebih dari satu
+
+print(10*('='), ('HASIL RETURN LEBIH DARI SATU'), ('=')*10)
+print(10*('='), ('YANG DI WAKILKAN TIDAK PAS'), ('=')*10)
+
+def operasi (angka1, angka2):
+    tambah = angka1 + angka2
+    kurang = angka1 - angka2
+    kali = angka1 * angka2
+    bagi = angka1 / angka2
+    return tambah, kurang, kali, bagi
+
+a,b,*sisa = operasi(10,5) # jika memang hanya mau 2 saja, maka sisa harus di wakilkan seperti pada contoh
+
+print(f'hasil tambah = {a}')
+print(f'hasil kurang = {b}')
+print(f'hasil kurang = {sisa}')
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system('cls')
+
+print ("BAB 46")
+print("------")
+
+'''           ====BAB 46 (DEFAULT ARGUMEN FUNGSI)====
+''' 
+
+# contoh 1
+
+def say_hallo(nama = "ganteng"):
+    print(f"hallo {nama}")
+
+say_hallo("ucup")
+say_hallo() # jika nama tidak di isi maka otomatis di isi dengan ganteng
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+# contoh 2
+
+def sapa_dia(nama, pesan = "apa kabar ?"):
+    print (f"hai {nama}, {pesan}")
+
+sapa_dia("dapin", "mau kemana ?")
+sapa_dia("dapin")
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+# contoh 3
+
+def hitung_pangkat(angka, pangkat=2):
+    hasil = angka**pangkat
+    return hasil
+
+print(hitung_pangkat(5))
+
+hasil = hitung_pangkat(pangkat=5, angka=10) # meski di balik maka akan tetap 10 pangkat 5 bukan 5 pangkat 10 
+print(hasil)
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+# contoh 4
+
+def fungsi (input1=1, input2=2, input3=3, input4=4):
+    hasil = input1 + input2 + input3 + input4
+    return hasil
+
+print(fungsi())
+print(fungsi(input3=10)) # menggant nilai input3 yang awalnya 3 menjadi 10
+print(fungsi(input3=10, input4= 20)) 
+print(fungsi(input2=5, input3=10, input4= 20)) 
+
+print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system('cls')
+
+print ("BAB 47")
+print("------")
+
+'''           ====BAB 47 (LATIHAN FUNGSI)====
+''' 
+
+'''                     JIKA MENGGUNAKAN CARA BIASA                     '''
+
+            # # membuat header program 
+            # while True:
+            #     print(f"{"PROGRAM MENGHITUNG LUAS":^40}")
+            #     print(f"{"DAN KELILING PERSEGI PANJANG":^40}")
+            #     print(f"{"-"*40:<40}")
+            #     
+            #     # mengambil input user 
+            #     LEBAR = int(input("Masukkkan nilai lebar = "))
+            #     PANJANG = int(input("Masukkkan nilai panjang = "))
+            #     
+            #     # perhitungan 
+            #     
+            #     LUAS = PANJANG*LEBAR
+            #     KELILING = 2*(PANJANG+LEBAR)
+            #     
+            #     # tampilkan hasil 
+            #     
+            #     print (f"Hasil perhitungan luas = {LUAS}")
+            #     print (f"Hasil perhitungan panjang = {KELILING}")
+            #     
+
+
+'''                     MENGGGUNAKAN FUNGSI                     '''
+
+def header():
+    ''' FUNGSI HEADER '''
+    print(f"{"-"*40:<40}")
+    print(f"{"PROGRAM MENGHITUNG LUAS":^40}")
+    print(f"{"DAN KELILING PERSEGI PANJANG":^40}")
+    print(f"{"-"*40:<40}")
+
+def input_user():
+    ''' MENGAMBIL INPUT USER '''
+    lebar = int(input("Masukkkan nilai lebar = "))
+    panjang = int(input("Masukkkan nilai panjang = "))
+    return panjang, lebar
+
+def hitung_luas(panjang, lebar):
+    ''' MENGHITUNG LUAS'''
+    return panjang * lebar 
+
+def hitung_keliling(panjang, lebar):
+    ''' MENGHITUNG KELILING'''
+    return 2 * (panjang + lebar)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while True:
+    header()
+    LEBAR, PANJANG = input_user()
+    LUAS = hitung_luas(LEBAR, PANJANG)
+    KELILING = hitung_keliling (LEBAR, PANJANG)
+
+    print(f"{"_"*40:<40}")
+
+    print (f"Hasil perhitungan luas = {LUAS}")
+    print (f"Hasil perhitungan panjang = {KELILING}")
+
+    print(f"{"_"*40:<40}")
+
+    el_lanjut = input("Mau lanjut kah? (y/n) : ")
+    print("\n\n\n\n\n")
+    if el_lanjut == "n":
+        break
+
+print(30*('='), ('Ending'), ('=')*30,"\n\n\n")
 
 
 
