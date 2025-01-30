@@ -68,6 +68,9 @@ print("-------------------------------------------------------------------------
 ====BAB 51 (FUNGSI LAMBDA DAN ANONYMOUS)
 ====BAB 52 (GLOBAL DAN LOCAK SCOPE)
 ====BAB 53 (IMPORT STATEMENT)
+====BAB 54 (PENGGUNAAN FROM DAN ALIAS(as))
+====BAB 55 (CARA MENGHITUNG WAKTU EKSEKUSI SUATU FILE DALAM PYTHON)
+====BAB 56 (MEMBUAT PACKAGE SEDERHANA)
 
 '''
 
@@ -8179,7 +8182,7 @@ print(10*('='), (' 1 '), ('=')*10)
 
 ''' isi hanya print saja'''
 
-import Materi_C1
+import Modul_1 # <-- Modul_1 adah contoh modul
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
@@ -8192,7 +8195,7 @@ print(10*('='), (' 2 '), ('=')*10)
 
 ''' isi nya ada datanya bukan hanya print '''
 
-import Materi_C2
+import Modul_2
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
@@ -8210,8 +8213,8 @@ print(10*('='), (' 3 '), ('=')*10)
     yang poin no 3 ini sebelum di import belum di print jadi baru di print 
     setelah di import 
 '''
-import Materi_C3 
-print(Materi_C3.data_semua )
+import Modul_3
+print(Modul_3.data_semua )
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
@@ -8224,10 +8227,30 @@ print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 print(10*('='), (' 4 '), ('=')*10)
 
-import Materi_C4
+import Modul_4
 
-hasil = Materi_C4.tambah(10,20)
+hasil = Modul_4.tambah(10,20)
 print (f"hasilnya = {hasil}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+
+
+
+
+
+# 5. contoh penggunaan import 
+
+import Modul_5
+
+hasil_tambah = Modul_5.tambah()
+print(f"hasil tambah = {hasil_tambah}")
+
+hasil_kali = Modul_5.kali()
+print(f"hasil kali = {hasil_kali}")
+
+pangkat_3 = Modul_5.pangkat(3)
+print(f"hasi pangkat 3 = {pangkat_3(3)}")
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
@@ -8238,6 +8261,492 @@ print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system('cls')
+
+print ("BAB 54")
+print("------")
+
+'''           ====BAB 54 (PENGGUNAAN FROM DAN ALIAS(as))====
+''' 
+
+# PENGGUNAAN FROM DALAM MENGIMPORT MODUL
+
+''' 
+        Fungsi from adalah agar kita tidak menaruh fungsi seperti tambah, ,kali, dan pangkat 
+    di semua tempat yang akan di gunakan fungsi tersebut, tapi cukup memindah fungsi tambah, 
+    kali, dan pangkat di bagian import agar tidak menulsi ulang kode yang akan di import 
+    secara terus menerus. tapi hanya cukup menulis sekali saja yaitu di bagian import 
+'''
+
+from Modul_5 import tambah, kali, pangkat
+
+
+hasil_tambah = tambah()
+print(f"hasil tambah = {hasil_tambah}")
+
+hasil_kali = kali()
+print(f"hasil kali = {hasil_kali}")
+
+pangkat_3 = pangkat(3)
+print(f"hasi pangkat 3 = {pangkat_3(3)}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+
+
+
+
+
+
+# PENGGUNAAN ALIAS(as )DALAM MENGIMPORT MODUL
+
+''' 
+        Alias berfungsi untuk mengubah nama asli module atau fungsi yang akan di import 
+    dengan nama lain sesuka kalian
+
+'''
+
+# alias digunakan untuk mengubah nama fungsi yang di import 
+
+from Modul_5 import tambah as terserah_diubah_sesuka_kamu
+from Modul_5 import kali as kali_aghi
+from Modul_5 import pangkat as wdohhhhhhh
+
+
+hasil_tambah = terserah_diubah_sesuka_kamu() # yang awalnya tambah di aliaskan ke terserah_diubah_sesuka_kamu
+print(f"hasil tambah = {hasil_tambah}")
+
+hasil_kali = kali_aghi()
+print(f"hasil kali = {hasil_kali}")
+
+pangkat_3 = wdohhhhhhh(3)
+print(f"hasi pangkat 3 = {pangkat_3(3)}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+
+
+
+
+
+
+# alias digunakan untuk mengubah module yang di import
+
+import Modul_5 as module_lima
+
+hasil_tambah = module_lima.tambah() # yang awalnya Modul_5 di aliaskan ke module_lima
+print(f"hasil tambah = {hasil_tambah}")
+
+hasil_kali = module_lima.kali()
+print(f"hasil kali = {hasil_kali}")
+
+pangkat_3 = module_lima.pangkat(3)
+print(f"hasi pangkat 3 = {pangkat_3(3)}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import time
+
+print ("BAB 55")
+print("------")
+
+'''           ====BAB 55 (CARA MENGHITUNG WAKTU EKSEKUSI SUATU FILE DALAM PYTHON)====
+''' 
+
+'''
+        Module time adalah module yang sangat berguna untuk menghitung seberapa cepat suatu file ketika 
+    di eksekusi atau di run. itu sangat berguna ketika kita sudah membuat project yang besar. akan 
+    sangat terasa beda nya ketika di run. 
+
+    template module time
+
+    * import time
+
+    * module time awal
+    * isi yang ingin anda cek waktu eksekusi nya 
+    * module time akhir
+    * perhitungan
+'''
+
+# menggunakan module time
+
+t_start = time.time() # module time awal
+
+
+print ("BAB 4")
+print("------")
+'''             ====BAB 4 (CASTING ATAU MENGUBAH TIPE DATA)====            '''
+print ("====INTEGER====")
+
+#   1. Mengubah tipe data "integer" ke tipe data lain
+a = 10          # data integer      # bentuk bilangan bulat
+b = float(a)    # diubah ke float   # bentuk bilangan desimal
+c = str (a)     # diubah ke string  # bentuk karakter bukan angka karna string
+d = bool (a)    # diubah ke boolean # hasilnya false jika a = 0, dan true jika a = selain 0 
+
+print ("data =", a , ",type =",type (a))
+print ("data =", b , ",type =",type (b))
+print ("data =", c , ",type =",type (c))
+print ("data =", d , ",type =",type (d))
+
+print("") # hanya spasi
+
+print ("====FLOAT====")
+
+#   2. Mengubah tipe data "float" ke tipe data lain
+a = 10.9        # data float        # bentuk bilangan desimal       # akan di bulatkan ke bawah meskipun 10.9 menjadi 10 bukan 11 
+b = int(a)      # diubah ke integer # bentuk bilangan bulat
+c = str (a)     # diubah ke string  # bentuk karakter bukan angka karna string
+d = bool (a)    # diubah ke boolean # hasilnya false jika a = 0, dan true jika a = selain 0 
+
+print ("data =", a , ",type =",type (a))
+print ("data =", b , ",type =",type (b))
+print ("data =", c , ",type =",type (c))
+print ("data =", d , ",type =",type (d))
+
+print("") # hanya spasi
+
+print ("====STRING====")
+
+#   3. Mengubah tipe data "string" ke tipe data lain
+a = 10          # data string       # bentuk karakter bukan angka karna string
+b = int(a)      # diubah ke integer # bentuk bilangan bulat
+c = float (a)   # diubah ke float   # bentuk bilangan desimal
+d = bool (a)    # diubah ke boolean # hasilnya false jika a = 0, dan true jika a = selain 0 
+
+print ("data =", a , ",type =",type (a))
+print ("data =", b , ",type =",type (b))
+print ("data =", c , ",type =",type (c))
+print ("data =", d , ",type =",type (d))
+
+print("") # hanya spasi
+
+print ("====BOOLEAN====")
+
+#   4. Mengubah tipe data "boolean" ke tipe data lain
+a = True        # data boolean      # hasilnya false jika a = 0, dan true jika a = selain 0 
+b = int(a)      # diubah ke integer # bentuk bilangan bulat
+c = float (a)   # diubah ke float   # bentuk bilangan desimal
+d = str (a)     # diubah ke boolean # bentuk karakter bukan angka karna string 
+
+print ("data =", a , ",type =",type (a))
+print ("data =", b , ",type =",type (b))
+print ("data =", c , ",type =",type (c))
+print ("data =", d , ",type =",type (d))
+
+print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n") # hanya spasi
+
+
+t_end = time.time() # module time akhir
+
+print("--------------------------------------------------------------------------------") # hanya spasi
+print (f"Waktu eksekusi nya adalah = {t_end - t_start}") # perhitungan
+print("--------------------------------------------------------------------------------") # hanya spasi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 56")
+print("------")
+
+'''           ====BAB 56 (MEMBUAT PACKAGE SEDERHANA)====
+''' 
+
+import Package_1.Modul_5_kw                             # cara 1 # cara biasa 
+from Package_1 import Modul_4_kw                        # cara 2 # jika package sudah memiliki 2 modul atau lebih, dan hanya ingin memilih satu modul saja
+from Package_1.Modul_4_kw import tambah as wdohhhhhh    # cara 3 # sama seperti cara 2, tapi yang ini lebih dalam karena langsung memamnggil fungsi yang ingin di pakai
+                                                        # di alias kan karena tambah bertabrakan dengan kode yang lain, 
+hasil_tambah = Package_1.Modul_5_kw.tambah(1,2,3,4,5)
+print (f"Hasil tambah dari package adalah {hasil_tambah}")
+
+tambah = Modul_4_kw.tambah(10,20)
+print(f"Hasil tambah = {tambah}")
+
+tambah = wdohhhhhh(10,20) # diganti wdohhhh karena fungsi tambah sudah di pakai oleh fungsi yang di atas. jadi betabrakan 
+print(f"Hasil tambah = {tambah}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 
 

@@ -1,5 +1,6 @@
-print("BAB 2")
-print("------")
+''' <<<<<<<<<<<<<<<<<<< MODULE 1 >>>>>>>>>>>>>>>>>'''
+                                
+
 '''             ====BAB 2 (TIPE DATA)====            '''
 #   1. Integer adalah tipe data angka tanpa koma atau bilangan bulat. cth: 1, 2, 3
 a = 100
