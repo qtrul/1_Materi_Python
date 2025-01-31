@@ -78,6 +78,8 @@ print("-------------------------------------------------------------------------
 ====BAB 61 (Package Numpy (contoh PIP))
 ====BAB 62 (Membuat Game sederhana Menggunakan Pygame)
 ====BAB 63 (Cara Penggunaan __main__.py)
+====BAB 64 (Membaca File Eksternal dengan open dan with)
+====BAB 65 (Menulis File Eksternal)
 
 '''
 
@@ -9722,6 +9724,25 @@ pygame.quit()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import os
 os.system("cls")
 
@@ -9790,6 +9811,389 @@ from Package_1 import Package_1_2
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 64")
+print("------")
+
+'''           ====BAB 64 (Membaca File Eksternal dengan open dan with)====
+'''
+
+
+''' Membuka dan menutup file dengan cara biasa '''
+
+
+
+
+'''
+    template membuka dan menutup file degan cara biasa:
+
+    file = open("......txt",mode="r")
+    file.close()
+'''
+
+print(3*"=", " Membaca file txt ", 3*"=")
+file = open("data.txt",mode="r") # r untuk read atau membaca
+                                 # w untuk write atau menulis
+
+print(f"status read : {file.readable()}")
+print(f"status write : {file.writable()}")
+
+
+'''     1. Baca semua baris sebagai list
+
+        print(file.readlines())
+
+
+        2. Baca per baris
+        
+        print(file.readline(),end="")        baca baris pertama
+        print(file.readline(),end="")        baca baris kedua
+
+
+        3. Baca seluruh file
+        print(file.read())      read untuk membaca
+                                write untuk menulis
+ '''        
+
+print(f"apakah file sudah diclose : {file.closed}")
+file.close()
+print(f"apakah file sudah diclose : {file.closed}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+''' Membuka dan menutup file dengan cara cepat '''
+
+
+
+
+'''
+    template membuka dan menutup file degan cara cepat:
+
+    with open(".....txt",mode="r") as file:
+        terserah = file.readline()
+        print(terserah,end="")   
+
+    Tidak perlu pake close sudah otomatis
+'''
+
+## salah satu teknik membuka file di python
+
+print("\n",3*"=", " Membaca file txt dengan with", 3*"=")
+
+with open("data.txt",mode="r") as file:
+    teserah = file.readline()
+    print(teserah,end="")
+    print(f"apakah file sudah diclose : {file.closed}")
+
+print(f"apakah file sudah diclose : {file.closed}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 65")
+print("------")
+
+'''           ====BAB 65 (Menulis File Eksternal)====
+'''
+
+# 1. mode write
+
+'''
+    Mode Write(w) adalah dia akan menimpa file yang lama dengan yang baru.
+'''
+
+with open("data_1.txt",'w',encoding="utf-8") as file:
+    file.write("jon si jhonny")
+
+with open("data_1.txt",'w',encoding="utf-8") as file:
+    file.write("ucup surucup")
+
+with open("data_1.txt",'w',encoding="utf-8") as file:
+    file.write("overwrite")
+
+
+
+
+
+
+# 2. mode append
+
+'''
+        Mode Append(a) adalah dia akan menambah file lama dengan file baru, 
+    kebalikan dari write(w). dengan syarat file pertama harus di 
+    formatkan w kemudian file keduanya baru menggunakan format a
+'''
+
+with open("data_2.txt",'w',encoding="utf-8") as file:
+    file.write("jon si jhonny\n")
+
+with open("data_2.txt",'a',encoding="utf-8") as file:
+    file.write("ucup surucup\n")
+
+with open("data_2.txt",'a',encoding="utf-8") as file:
+    file.write("tambah lagi dengan append\n")
+
+
+
+
+
+
+# 3. mode r+
+
+'''
+    Mode r+ adalah menimpa isi text sesuai dengan panjang data. 
+    
+    cth: file lama 
+
+    baris 1
+    baris 2
+    baris 3
+
+        file baru 
+
+    ucup
+
+    panjang ucup adaah 4 huruf maka otong akan mengganti 4 huruf dari file yang lama 
+
+        output 
+
+    ucups 1
+    baris 2
+    baris 3
+'''
+
+with open("data_3.txt",'w',encoding="utf-8") as file:
+    file.write("data ke 3\n")
+
+with open("data_3.txt",'r+',encoding="utf-8") as file:
+    file.write("baris-1 \n")
+    file.write("baris-2 \n")
+    file.write("baris-3 \n")
+
+with open("data_3.txt",'r+',encoding="utf-8") as file:
+    data = file.read()
+    print(data)
+
+with open("data_3.txt",'r+',encoding="utf-8") as file:
+    file.write("ucup") # menimpa isi text sesuai dengan panjang data
 
 
 
