@@ -15,63 +15,69 @@ print("-------------------------------------------------------------------------
 '''
                    ==== JUDUL SETIAP BAB ====
 
-====BAB 1  (VARIABEL)
-====BAB 2  (TIPE DATA)
-====BAB 3  (TIPE DATA KHUSUS)
-====BAB 4  (CASTING ATAU MENGUBAH TIPE DATA)
-====BAB 5  (INPUT ATAU MENGAMBIL TIPE DATA)
-====BAB 6  (OPERASI ARITMATIKA)
-====BAB 7  (PENGAPLIKASIAN OPERASI ARITMATIKA)
-====BAB 8  (OPERASI KOMPARASI)
-====BAB 9  (OPERASI LOGIKA ATAU BOOLEAN)
-====BAB 10 (OPERASI LOGIKA DAN KOMPARASI)
-====BAB 11 (BITWISE) 
-====BAB 12 (PENGENALAN STRING) 
-====BAB 13 (OPERASI DAN MANUPULASI STRING)
-====BAB 14 (OPERATOR DALAM BENTUK METODE)
-====BAB 15 (FORMAT STRING)
-====BAB 16 (STRING WIDTH AND MULTILINE)
-====BAB 17 (DATE AND TIME)
-====BAB 18 (IF AND ELSE STATEMENT)
-====BAB 19 (ELIF = else if STATEMENT)
-====BAB 20 (MEMBUAT KALKULATOR SEDERHANA)
-====BAB 21 (FOR LOOP (PERULANGAN)
-====BAB 22 (WHILE LOOP)
-====BAB 23 (CONTINUE AND PASS)
-====BAB 24 (BREAK)
-====BAB 25 (LATIHAN LOOP (FOR AND WHILE))
-====BAB 26 (LATIHAN MEMBUAT BANGUN DATAR MENGGUNAKAN LOOP)
-====BAB 27 (LIST)
-====BAB 28 (MANIPULASI LIST)
-====BAB 29 (OPERASI LIST)
-====BAB 30 (CARA MENDUPLIKAT LIST)
-====BAB 31 (MEMBUAT LIST DI DALAM LIST
-====BAB 32 (MENDUPLIKAT LIST MENGGUNAKAN DEPP COPY)
-====BAB 33 (LOOPING DARI LIST)
-====BAB 34 (LATIHAN LIST SEDERHANA)
-====BAB 35 (TUPLES DAN SETS)
-====BAB 36 (DICTIONARY (dict))
-====BAB 37 (OPERASI PADA DICTIONARY)
-====BAB 38 (LOOPING DICTIONARY)
-====BAB 39 (COPY AND POP DICTIONARY)
-====BAB 40 (MULTI KEYS DAN NESTING DICTIONARY)
-====BAB 41 (LATIHAN DICTIONARY PART 1)
-====BAB 42 (LATIHAN DICTIONARY PART 2)
-====BAB 43 (PENGENALAN FUNGSI)
-====BAB 44 (FUNGSI DENGAN ARGUMENT)
-====BAB 45 (FUNGSI DENGAN RETURN)
-====BAB 46 (DEFAULT ARGUMEN FUNGSI)
-====BAB 47 (LATIHAN FUNGSI)
-====BAB 48 (PENGGUNAAN type HINTS pada fungsi
-====BAB 49 (PENGGUNAAN *args)
-====BAB 50 (PENGGUNAAN **kwargs)
-====BAB 51 (FUNGSI LAMBDA DAN ANONYMOUS)
-====BAB 52 (GLOBAL DAN LOCAK SCOPE)
-====BAB 53 (IMPORT STATEMENT)
-====BAB 54 (PENGGUNAAN FROM DAN ALIAS(as))
-====BAB 55 (CARA MENGHITUNG WAKTU EKSEKUSI SUATU FILE DALAM PYTHON)
-====BAB 56 (MEMBUAT PACKAGE SEDERHANA)
-====BAB 57 (CARA PENGGUNAAN __init__py)
+====BAB 1  (Variabel)
+====BAB 2  (Tipe Data)
+====BAB 3  (Tipe Data Khusus)
+====BAB 4  (Casting atau Mengubah Tipe Data)
+====BAB 5  (Input atau Mengambil Tipe Data)
+====BAB 6  (Operasi Aritmatika)
+====BAB 7  (Pengaplikasian Operasi Aritmatika)
+====BAB 8  (Operasi Komparasi)
+====BAB 9  (Operasi Logika atau Boolean)
+====BAB 10 (Operasi Logika dan Komparasi)
+====BAB 11 (Bitwise)
+====BAB 12 (Pengenalan String)
+====BAB 13 (Operasi dan Manupulasi String)
+====BAB 14 (Operator Dalam Bentuk Metode)
+====BAB 15 (Format String)
+====BAB 16 (String Width and Multiline)
+====BAB 17 (Date and Time)
+====BAB 18 (if and else statement)
+====BAB 19 (elif = else if statement)
+====BAB 20 (Membuat Kalkulator Sederhana)
+====BAB 21 (for loop (perulangan))
+====BAB 22 (while loop)
+====BAB 23 (continue and pass)
+====BAB 24 (break)
+====BAB 25 (Latihan loop (for and while))
+====BAB 26 (Latihan Membuat Bangun Datar Menggunakan loop)
+====BAB 27 (list)
+====BAB 28 (manipulasi list)
+====BAB 29 (Operasi list)
+====BAB 30 (Cara Menduplikat list)
+====BAB 31 (Membuat list di Dalam list)
+====BAB 32 (Menduplikat list Menggunakan depp copy)       
+====BAB 33 (looping dari list)
+====BAB 34 (Latihan list Sederhana)
+====BAB 35 (tuples dan sets)
+====BAB 36 (dictionary (dict))
+====BAB 37 (Operasi pada dictionary)
+====BAB 38 (looping dictionary)
+====BAB 39 (copy and pop dictionary)
+====BAB 40 (multi keys dan nesting dictionary)
+====BAB 41 (Latihan dictionary part 1)
+====BAB 42 (Latihan dictionary part 2)
+====BAB 43 (Pengenalan fungsi)
+====BAB 44 (fungsi Dengan argument)
+====BAB 45 (fungsi Dengan return)
+====BAB 46 (default argumen fungsi)
+====BAB 47 (Latihan fungsi)
+====BAB 48 (Penggunaan type hints pada fungsi)
+====BAB 49 (Penggunaan *args)
+====BAB 50 (Penggunaan **kwargs)
+====BAB 51 (fungsi lambda dan anonymous)
+====BAB 52 (global dan locak scope)
+====BAB 53 (import statement)
+====BAB 54 (Penggunaan from dan alias(as))
+====BAB 55 (Cara Menghitung Waktu Eksekusi Suatu File Dalam Python)
+====BAB 56 (Membuat package Sederhana)
+====BAB 57 (Cara Penggunaan __init__.py)
+====BAB 58 (standard library)
+====BAB 59 (tkinter)
+====BAB 60 (Mengenal pip)
+====BAB 61 (Package Numpy (contoh PIP))
+====BAB 62 (Membuat Game sederhana Menggunakan Pygame)
+====BAB 63 (Cara Penggunaan __main__.py)
 
 '''
 
@@ -380,7 +386,7 @@ print("-------------------------------------------------------------------------
 print("BAB 1")
 print("------")
 
-'''                 ====BAB 1 (VARIABEL)====                           '''                        
+'''                 ====BAB 1  (Variabel)====                           '''                        
 '''larangan dalam menulis variable                                     '''                                                                
 '''   1. 10data =     (tidak boleh, angka tidak boleh di depan huruf)  '''                                            
 '''      data10 =     (boleh)                                          '''                    
@@ -465,7 +471,7 @@ print("") # hanya spasi
 
 print("BAB 2")
 print("------")
-'''             ====BAB 2 (TIPE DATA)====            '''
+'''             ====BAB 2  (Tipe Data)====            '''
 #   1. Integer adalah tipe data angka tanpa koma atau bilangan bulat. cth: 1, 2, 3
 a = 100
 print ("data = ", a)
@@ -565,7 +571,7 @@ print("") # hanya spasi
 
 print("BAB 3")
 print("------")
-'''             ====BAB 3 (TIPE DATA KHUSUS)====            '''
+'''             ====BAB 3  (Tipe Data Khusus)====            '''
 #   1. Bilangan kompleks yaitu yang terdiri dari bilangan real dan imajiner 
 e = complex (5,6) # 5 adalah bilangan real, 6 adalah biangan imajiner 
 print ("data = ", e)
@@ -661,7 +667,7 @@ print("") # hanya spasi
 
 print ("BAB 4")
 print("------")
-'''             ====BAB 4 (CASTING ATAU MENGUBAH TIPE DATA)====            '''
+'''             ====BAB 4  (Casting atau Mengubah Tipe Data))====            '''
 print ("====INTEGER====")
 
 #   1. Mengubah tipe data "integer" ke tipe data lain
@@ -799,7 +805,7 @@ print("") # hanya spasi
 
 print ("BAB 5")
 print("------")
-'''             ====BAB 5 (INPUT ATAU MENGAMBIL TIPE DATA)====            '''
+'''             ====BAB 5  (Input atau Mengambil Tipe Data)====            '''
 a = input ("Masukkan data = ")
 print ("data = ", a, ", type = ", type (a)) # hasil pasti string
 
@@ -893,7 +899,7 @@ print("") # hanya spasi
 
 print ("BAB 6")
 print("------")
-'''             ====BAB 6 (OPERASI ARITMATIKA)====                                  '''
+'''             ====BAB 6  (Operasi Aritmatika)====                                  '''
 '''Jenis-jenis operasi:                                                             '''                            
 '''     1. Operasi penjumlahan (+)                                                  '''                                              
 '''     2. Operasi pengurangan (-)                                                  '''                              
@@ -1011,7 +1017,7 @@ print ("")
 
 print ("BAB 7")
 print("------")
-'''                                      ====BAB 7 (PENGAPLIKASIAN OPERASI ARITMATIKA)====                                      '''
+'''                                      ====BAB 7  (Pengaplikasian Operasi Aritmatika)====                                      '''
 ''' Rumus umum                                                                                                   '''                                                                                                                                                                              
 '''                                                                                                              '''                                                                                                                                                                   
 ''' |          |      celcius        |        Reamur       |       Fahrenheit      |          Kelvin           | '''                                                                                                                                                                                                                                                                             
@@ -1151,7 +1157,7 @@ print ("")
 print ("BAB 8")
 print("------")
 
-'''             ====BAB 8 (OPERASI KOMPARASI)====                                                                                   '''
+'''             ====BAB 8  (Operasi Komparasi)====                                                                                   '''
 '''                                                                                                                                 '''
 '''Operasi komparasi adalah operasi yang dimana hasilnya selalu boolean (True or False)                                             '''
 '''                                                                                                                                 '''                         
@@ -1314,7 +1320,7 @@ print ("")
 print ("BAB 9")
 print("------")
 
-'''====BAB 9 (OPERASI LOGIKA ATAU BOOLEAN)===='''
+'''====BAB 9  (Operasi Logika atau Boolean)===='''
 
 
 #Jenis-jenis operasi logika                                                                                          
@@ -1481,7 +1487,7 @@ print ("")
 print ("BAB 10")
 print("------")
 
-'''====BAB 10 (OPERASI LOGIKA DAN KOMPARASI)===='''
+'''====BAB 10 (Operasi Logika dan Komparasi)===='''
 
 
 # ++++++++3------------10+++++++++++
@@ -1567,7 +1573,7 @@ print ("Angka yang anda masukkan =", huruf2)
 print ("BAB 11")
 print("------")
 
-'''           ====BAB 11 (BITWISE)====                                 
+'''           ====BAB 11 (Bitwise)====                                 
 '''
 a = 9
 b = 5
@@ -1679,7 +1685,7 @@ print ("")
 print ("BAB 12")
 print("------")
 
-'''           ====BAB 12 (PENGENALAN STRING)====                                 
+'''           ====BAB 12 (Pengenalan String)====                                 
 '''
 
 # 1. cara membuat string 
@@ -1797,7 +1803,7 @@ print ("""
 print ("BAB 13")
 print("------")
 
-'''           ====BAB 13 (OPERASI DAN MANUPULASI STRING)====
+'''           ====BAB 13 (Operasi dan Manupulasi String)====
 '''
 
 # 1. menyambung string 
@@ -1975,7 +1981,7 @@ print ("jumlah b dalam", data, "=", jumlah)
 print ("BAB 14")
 print("------")
 
-'''           ====BAB 14 (OPERATOR DALAM BENTUK METODE)====
+'''           ====BAB 14 (Operator Dalam Bentuk Metode)====
 '''
 
 # 1. merubah semua ke upper case
@@ -2253,7 +2259,7 @@ print ("|",tengah,"|")
 print ("BAB 15")
 print("------")
 
-'''           ====BAB 15 (FORMAT STRING)====
+'''           ====BAB 15 (Format String)====
 ''' 
 
 # 1. string
@@ -2467,7 +2473,7 @@ print ("------------------------------\n")
 print ("BAB 16")
 print("------")
 
-'''           ====BAB 16 (STRING WIDTH AND MULTILINE)====
+'''           ====BAB 16 (String Width and Multiline)====
 ''' 
 
 # 1. data
@@ -2598,7 +2604,7 @@ print (data_string)
 print ("BAB 17")
 print("------")
 
-'''           ====BAB 17 (DATE AND TIME)====
+'''           ====BAB 17 (Date and Time)====
 ''' 
 
 # tanggal, bulan, tahun, dan hari ini 
@@ -2700,7 +2706,7 @@ print (f"Anda sekarang berusia \n\t: {umur} tahun")
 print ("BAB 18")
 print("------")
 
-'''           ====BAB 18 (IF AND ELSE STATEMENT)====
+'''           ====BAB 18 (if and else statement)====
 ''' 
 
 nama = input('Siapa kau ??? : ')
@@ -2776,7 +2782,7 @@ print('terima kasih')
 print ("BAB 19")
 print("------")
 
-'''           ====BAB 19 (ELIF = else if STATEMENT)====
+'''           ====BAB 19 (elif = else if statement)====
 ''' 
 
 nama = input ("Siapa nama mu = ")
@@ -2865,7 +2871,7 @@ print ("terima kasih")
 print ("BAB 20")
 print("------")
 
-'''           ====BAB 20 (MEMBUAT KALKULATOR SEDERHANA)====
+'''           ====BAB 20 (Membuat Kalkulator Sederhana)====
 ''' 
 
 print (20*'=')
@@ -2959,7 +2965,7 @@ print('----------------------\n\nTERIMA KASIH BOLO...')
 print ("BAB 21")
 print("------")
 
-'''           ====BAB 21 (FOR LOOP (PERULANGAN))====
+'''           ====BAB 21 (for loop (perulangan))====
 ''' 
 
 # ini dengan list
@@ -3193,7 +3199,7 @@ print (10*'=', 'Ending', '='*10, '\n\n\n')
 print ("BAB 23")
 print("------")
 
-'''           ====BAB 23 (CONTINUE AND PASS)====
+'''           ====BAB 23 (continue and pass)====
 ''' 
 '''
                         ====CONTINUE====
@@ -3311,7 +3317,7 @@ print (10*'=', 'Ending', '='*10, '\n\n\n')
 print ("BAB 24")
 print("------")
 
-'''           ====BAB 24 (BREAK)====
+'''           ====BAB 24 (break)====
 ''' 
 
 angka = 0
@@ -3380,7 +3386,7 @@ print (10*'=', 'Ending', '='*10, '\n\n\n')
 print ("BAB 25")
 print("------")
 
-'''           ====BAB 25 (LATIHAN LOOP (FOR AND WHILE))====
+'''           ====BAB 25 (Latihan loop (for and while))====
 ''' 
 
 sisi = 5
@@ -3470,7 +3476,7 @@ print (10*'=', 'Ending', '='*10, '\n\n\n')
 print ("BAB 26")
 print("------")
 
-'''           ====BAB 26 (LATIHAN MEMBUAT BANGUN DATAR MENGGUNAKAN LOOP)====
+'''           ====BAB 26 (Latihan Membuat Bangun Datar Menggunakan loop)====
 ''' 
 
 # 1. membuat segitiga sama sisi
@@ -3740,7 +3746,7 @@ print (10*'=', 'Ending', '='*10, '\n\n\n')
 print ("BAB 27")
 print("------")
 
-'''           ====BAB 27 (LIST)====
+'''           ====BAB 27 (list)====
 ''' 
 
 # 1. kumpulan data numbers
@@ -3899,7 +3905,7 @@ print (10*'=', 'Ending', '='*10, '\n')
 print ("BAB 28")
 print("------")
 
-'''           ====BAB 28 (MANIPULASI LIST)====
+'''           ====BAB 28 (manipulasi list)====
 ''' 
 
 # index  0(-3)    1(-2)   2(-1)
@@ -4063,7 +4069,7 @@ print (10*'=', 'Ending', '='*10, '\n')
 print ("BAB 29")
 print("------")
 
-'''           ====BAB 29 (OPERASI LIST)====
+'''           ====BAB 29 (Operasi list)====
 ''' 
 
 data_angka = [1,2,1,3,2,1,4,5,3,7,5,4,6,3,3,2,3,2,2,]
@@ -4206,7 +4212,7 @@ print (10*'=', 'Ending', '='*10, '\n\n\n')
 print ("BAB 30")
 print("------")
 
-'''           ====BAB 30 (CARA MENDUPLIKAT LIST)====
+'''           ====BAB 30 (Cara Menduplikat list)====
 ''' 
 
 '''
@@ -4335,7 +4341,7 @@ print(14*('='), ('Ending'), ('=')*14)
 print ("BAB 31")
 print("------")
 
-'''           ====BAB 31 (MEMBUAT LIST DI DALAM LIST)====
+'''           ====BAB 31 (Membuat list di Dalam list)====
 ''' 
 
 # list biasa
@@ -4465,7 +4471,7 @@ print(14*('='), ('Ending'), ('=')*14,"\n\n\n")
 print ("BAB 32")
 print("------")
 
-'''           ====BAB 32 (MENDUPLIKAT LIST MENGGUNAKAN DEPP COPY)====
+'''           ====BAB 32 (Menduplikat list Menggunakan depp copy)  ====
 ''' 
 
 # menggunakan copy biasa 
@@ -4645,7 +4651,7 @@ print((''),14*('='), ('Ending'), ('=')*14,"\n\n\n")
 print ("BAB 33")
 print("------")
 
-'''           ====BAB 33 (LOOPING DARI LIST)====
+'''           ====BAB 33 (looping dari list)====
 ''' 
 
 # 1. for loop 
@@ -4862,7 +4868,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 print ("BAB 34")
 print("------")
 
-'''           ====BAB 34 (LATIHAN LIST SEDERHANA)====
+'''           ====BAB 34 (Latihan list Sederhana)====
 ''' 
 
 list_buku = []
@@ -4982,7 +4988,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 print ("BAB 35")
 print("------")
 
-'''           ====BAB 35 (TUPLES DAN SETS)====
+'''           ====BAB 35 (tuples dan sets)====
 ''' 
 
 # list []
@@ -5099,7 +5105,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 print ("BAB 36")
 print("------")
 
-'''           ====BAB 36 (DICTIONARY (dict))====
+'''           ====BAB 36 (dictionary (dict))====
 ''' 
 
 # ============================= perbedaan dictionary dengan list =============================
@@ -5236,7 +5242,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 print ("BAB 37")
 print("------")
 
-'''           ====BAB 37 (OPERASI PADA DICTIONARY)====
+'''           ====BAB 37 (Operasi pada dictionary)====
 ''' 
 
 data_dict = {
@@ -5440,7 +5446,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 print ("BAB 38")
 print("------")
 
-'''           ====BAB 38 (LOOPING DICTIONARY)====
+'''           ====BAB 38 (looping dictionary)====
 ''' 
 
 teman_teman = {
@@ -5651,7 +5657,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n")
 print ("BAB 39")
 print("------")
 
-'''           ====BAB 39 (COPY AND POP DICTIONARY)====
+'''           ====BAB 39 (copy and pop dictionary)====
 ''' 
 
 # copy dictionary
@@ -5824,7 +5830,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
 print ("BAB 40")
 print("------")
 
-'''           ====BAB 40 (MULTI KEYS DAN NESTING DICTIONARY)====
+'''           ====BAB 40 (multi keys dan nesting dictionary)====
 ''' 
 
 import datetime
@@ -6163,7 +6169,7 @@ os.system('cls')
 print ("BAB 41")
 print("------")
 
-'''           ====BAB 41 (LATIHAN DICTIONARY PART 1)====
+'''           ====BAB 41 (Latihan dictionary part 1))====
 ''' 
 
 mahasiswa_template = {
@@ -6291,7 +6297,7 @@ import random
 print ("BAB 42")
 print("------")
 
-'''           ====BAB 42 (LATIHAN DICTIONARY PART 2)====
+'''           ====BAB 42 (Latihan dictionary part 2)====
 ''' 
 
 mahasiswa_template = {
@@ -6439,7 +6445,7 @@ print("\n\n\n",35*('='), ('Ending'), ('=')*35,"\n\n\n\n\n")
 print ("BAB 43")
 print("------")
 
-'''           ====BAB 43 (PENGENALAN FUNGSI)====
+'''           ====BAB 43 (Pengenalan fungsi)====
 ''' 
 
 '''
@@ -6570,7 +6576,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
 print ("BAB 44")
 print("------")
 
-'''           ====BAB 44 (FUNGSI DENGAN ARGUMENT)====
+'''           ====BAB 44 (fungsi Dengan argument)====
 ''' 
 
 def Teman_teman(nama):
@@ -6700,7 +6706,7 @@ print((''),10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
 print ("BAB 45")
 print("------")
 
-'''           ====BAB 45 (FUNGSI DENGAN RETURN)====
+'''           ====BAB 45 (fungsi Dengan return)====
 ''' 
 
 # hasil return hanya satu
@@ -6870,7 +6876,7 @@ os.system('cls')
 print ("BAB 46")
 print("------")
 
-'''           ====BAB 46 (DEFAULT ARGUMEN FUNGSI)====
+'''           ====BAB 46 (default argumen fungsi)====
 ''' 
 
 # contoh 1
@@ -7033,7 +7039,7 @@ os.system('cls')
 print ("BAB 47")
 print("------")
 
-'''           ====BAB 47 (LATIHAN FUNGSI)====
+'''           ====BAB 47 (Latihan fungsi)====
 ''' 
 
 '''                     JIKA MENGGUNAKAN CARA BIASA                     '''
@@ -7209,7 +7215,7 @@ os.system('cls')
 print ("BAB 48")
 print("------")
 
-'''           ====BAB 48 (PENGGUNAAN type HINTS pada fungsi)====
+'''           ====BAB 48 (Penggunaan type hints pada fungsi)====
 ''' 
 
 '''
@@ -7327,7 +7333,7 @@ os.system('cls')
 print ("BAB 49")
 print("------")
 
-'''           ====BAB 49 (PENGGUNAAN *args)====
+'''           ====BAB 49 (Penggunaan *args)====
 ''' 
 
 def fungsi(nama, tinggi, berat):
@@ -7460,7 +7466,7 @@ os.system('cls')
 print ("BAB 50")
 print("------")
 
-'''           ====BAB 50 (PENGGUNAAN **kwargs)====
+'''           ====BAB 50 (Penggunaan **kwargs)====
 ''' 
 
 '''
@@ -7607,7 +7613,7 @@ os.system('cls')
 print ("BAB 51")
 print("------")
 
-'''           ====BAB 51 (FUNGSI LAMBDA DAN ANONYMOUS)====
+'''           ====BAB 51 (fungsi lambda dan anonymous)====
 ''' 
 
 # FUNGSI LAMBDA
@@ -7913,7 +7919,7 @@ os.system('cls')
 print ("BAB 52")
 print("------")
 
-'''           ====BAB 52 (GLOBAL DAN LOCAK SCOPE)====
+'''           ====BAB 52 (global dan locak scope)====
 ''' 
 
 '''
@@ -8169,7 +8175,7 @@ os.system('cls')
 print ("BAB 53")
 print("------")
 
-'''           ====BAB 53 (IMPORT STATEMENT)====
+'''           ====BAB 53 (import statement)====
 ''' 
 
 '''
@@ -8362,7 +8368,7 @@ os.system('cls')
 print ("BAB 54")
 print("------")
 
-'''           ====BAB 54 (PENGGUNAAN FROM DAN ALIAS(as))====
+'''           ====BAB 54 (Penggunaan from dan alias(as))====
 ''' 
 
 # PENGGUNAAN FROM DALAM MENGIMPORT MODUL
@@ -8542,7 +8548,7 @@ import time
 print ("BAB 55")
 print("------")
 
-'''           ====BAB 55 (CARA MENGHITUNG WAKTU EKSEKUSI SUATU FILE DALAM PYTHON)====
+'''           ====BAB 55 (Cara Menghitung Waktu Eksekusi Suatu File Dalam Python)====
 ''' 
 
 '''
@@ -8731,7 +8737,7 @@ os.system("cls")
 print ("BAB 56")
 print("------")
 
-'''           ====BAB 56 (MEMBUAT PACKAGE SEDERHANA)====
+'''           ====BAB 56 (Membuat package Sederhana)====
 ''' 
 
 import Package_1.Modul_5_kw                             # cara 1 # cara biasa 
@@ -8842,7 +8848,7 @@ os.system("cls")
 print ("BAB 57")
 print("------")
 
-'''           ====BAB 57 (CARA PENGGUNAAN __init__py)====
+'''           ====BAB 57 (Cara Penggunaan __init__py)====
 '''
 
 '''
@@ -8998,7 +9004,7 @@ os.system("cls")
 print ("BAB 58")
 print("------")
 
-'''           ====BAB 58 (STANDARD LIBRARY)====
+'''           ====BAB 58 (standard library)====
 '''
 
 '''
@@ -9028,6 +9034,759 @@ print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 59")
+print("------")
+
+'''           ====BAB 59 (tkinter)====
+'''
+
+'''
+        tkinter adalah salah satu app untuk mengrun hasil code dari python, selama kita hanya menggunakan cmd 
+    atau terminal untuk mengrun hasil code kita, selain cmd dan terminal ada tkinter untuk mliat hasil 
+    code kita 
+'''
+
+
+# GUI -> Graphical User Interface
+
+import tkinter as tk
+from tkinter import ttk
+from tkinter.messagebox import showinfo
+
+# Init
+window = tk.Tk()
+window.configure(bg="white")
+window.geometry("300x200")
+window.resizable(False,False)
+window.title("Sapa Dia!")
+
+# Variabel dan Fungsi
+NAMA_DEPAN = tk.StringVar()
+NAMA_BELAKANG = tk.StringVar()
+
+def tombol_click():
+    '''fungsi ini akan dipanggil oleh tombol'''
+    pesan = f"Halo {NAMA_DEPAN.get()} {NAMA_BELAKANG.get()}, Ganteeeng!"
+    showinfo(title="Whazzup!",message=pesan)
+
+# frame input
+input_frame = ttk.Frame(window)
+# penempatan Grid, Pack, Place
+input_frame.pack(padx=10,pady=10,fill="x",expand=True)
+
+# komponen-komponen
+# 1. Label nama depan
+nama_depan_label = ttk.Label(input_frame,text="Nama Depan:")
+nama_depan_label.pack(padx=10,fill="x",expand=True)
+# 2. entry nama depan
+nama_depan_entry = ttk.Entry(input_frame,textvariable=NAMA_DEPAN)
+nama_depan_entry.pack(padx=10,fill="x",expand=True)
+# 3. Label nama belakang
+nama_belakang_label = ttk.Label(input_frame,text="Nama belakang:")
+nama_belakang_label.pack(padx=10,fill="x",expand=True)
+# 4. entry nama belakang
+nama_belakang_entry = ttk.Entry(input_frame,textvariable=NAMA_BELAKANG)
+nama_belakang_entry.pack(padx=10,fill="x",expand=True)
+# 5. Tombol
+tombol_sapa = ttk.Button(input_frame,text="Sapa!",command=tombol_click)
+tombol_sapa.pack(fill='x',expand=True,padx=10,pady=10)
+
+# Main Loop window
+window.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 60")
+print("------")
+
+'''           ====BAB 60 (Mengenal pip)====
+'''
+
+'''
+
+    pip adalah manajer paket untuk Python yang digunakan untuk menginstal dan 
+mengelola pustaka atau modul pihak ketiga. Dengan pip, kamu bisa dengan 
+mudah menambahkan berbagai paket Python dari Python Package Index (PyPI) 
+ke dalam proyekmu
+
+PyPI bisa di search: PyPI python
+
+    untuk menjalankan beberapa perintah seperti install dan uninstall bisa di 
+lakukan di cmd, power shell, ataupun terminal
+
+ada beberapa perintah yang bisa di jalankan:
+    1. install 
+
+        pip install (yang akan di install)
+cth:    pip install numpy
+
+    2. uninstall
+
+        pip uninstall (yang akan di install)
+cth:    pip uninstall numpy
+
+    3. memeriksa pip yang sudah di install
+
+        pip list
+
+    4. memeriksa versi pip
+
+        pip --version
+
+    5. mengupgrade
+
+        pip install --upgrade (yang akan di upgrade)
+cth:    pip install --upgrade numpy
+
+    6. memilih versi yang akan d install
+
+        pip install (yang akan di install)==(versi yang di pilih)
+cth:    pip install numpy==1.21.0
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 61")
+print("------")
+
+'''           ====BAB 61 (Package Numpy (contoh PIP))====
+'''
+
+import numpy as np
+
+# 1. perkenalan menggunakan vektor 
+
+list_a = [1,2,3,4]                  # output list_a = [1, 2, 3, 4]  list ada koma nya 
+vector_a = np.array([1,2,3,4])      # output vector_a = [1 2 3 4]   vektor tidak ada koma nya jadi lebih rapi timbang list 
+
+print(f"list_a = {list_a}")         # list tidak bisa di kali langsng
+# print(list_a**2) <- ini akan gagal
+print(f"vector_a = {vector_a}")
+print(f"a pangkat 2 = {vector_a**2}") # vektor bisa di kali langsung
+print(f"a kali 5 = {vector_a*5}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+# 2. membuat matriks menggunakan vektor  
+
+matrix_b = np.array([(1,2),(3,4)])
+print(f"matrix b = \n{matrix_b}")
+print(f"matrix b^2 = \n{matrix_b**2}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+# 3. matriks nol
+
+zeros_c = np.zeros((2,2))
+print(f"zeros c = \n{zeros_c}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+# 4. matriks satu
+
+ones_d = np.ones((2,2))
+print(f"ones c = \n{ones_d}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+# 5. operasi penjumlahan pada matriks
+
+jumlah = matrix_b + matrix_b**2 + ones_d
+print(f"jumlah = \n{jumlah}")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 62")
+print("------")
+
+'''           ====BAB 62 (Membuat Game sederhana Menggunakan Pygame)====
+'''
+
+import pygame
+
+## init
+pygame.init()
+# variable running game
+isRun = True
+
+# membuat display surface object
+window_lebar = 500
+window_panjang = 500
+window = pygame.display.set_mode((window_lebar,window_panjang))
+
+# object game
+# posisi
+x = 250
+y = 250
+
+# ukuran
+panjang = 20
+lebar = 20
+
+# kecepatan gerak
+speed = 10
+
+while isRun:
+    pygame.time.delay(10)
+
+    # user input, database input
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            isRun = False
+    
+    # ambil semua keyboard press
+    keys = pygame.key.get_pressed()
+
+    # ambil ke kiri
+    if keys[pygame.K_LEFT] and x > 0:
+        x -= speed
+    
+    if keys[pygame.K_RIGHT] and x < window_lebar-lebar:
+        x += speed
+
+    if keys[pygame.K_DOWN] and y < window_panjang-panjang:
+        y += speed
+
+    if keys[pygame.K_UP] and y > 0:
+        y -= speed
+
+    # game dynamic
+    
+    # update asset
+    window.fill((255,255,255))
+    pygame.draw.rect(window,(255,120,0),(x,y,lebar,panjang))
+    # render ke display
+    pygame.display.update()
+
+pygame.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 63")
+print("------")
+
+'''           ====BAB 63 (Cara Penggunaan __main__.py)====
+'''
+
+'''
+        Dalam sebuah package rata" akan ada folder __init__ dan __main__, apa 
+    fungsinya?, seperti yang kita tahu __init__ berfungsi untuk menyimpan 
+    semua import yang kita butuhkan, sedangkan __main__ berfungsi untuk 
+    menandai fungsi dari sebuah package, dalam projeck yang besar kita 
+    mestinya akan membuat puluhan package nantinya, untuk menandai setiap 
+    package kita akan butuh sebuah penanda yang dimana __main__ akan 
+    berfungsi sebagai penanda tersebut.   
+'''
+
+
+# __main__ adalah top level code environment
+
+# __name__ == "__main__" ; name akan berubah jadi main jika di jalankan di program utama alias tidak di import 
+# jika ada di file program utama
+
+## __name__ pada file program utama
+
+print(10*('='), ('JIKA DI PROGRAM UTAMA'), ('=')*10,"")
+
+print(f"nilai __name__ pada main.py = '{__name__}'")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+## __name__ pada file program eksternal ; akan berubah jadi nama file bukan main lagi 
+
+print(10*('='), ('JIKA DI IMPORT'), ('=')*10,"")
+
+from Package_1 import Modul_6
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+## contoh penggunaan __main__
+
+# deklarasi
+def fungsi_tambah(a:int,b:int)->int:
+    return a+b
+
+# fungsi utama
+if __name__ == "__main__":
+    angka1 = 5
+    angka2 = 10
+    hasil = fungsi_tambah(angka1,angka2)
+    print(f"hasil tambah = {hasil}")
+
+
+## import package
+from Package_1 import Package_1_2
 
 
 
