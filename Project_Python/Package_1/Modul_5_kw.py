@@ -1,3 +1,8 @@
+''' <<<<<<<<<<<<<<<<<<< MODULE 5 kw >>>>>>>>>>>>>>>>>'''
+
+
+
+
 def tambah (*args):
     hasil = 0
     for data in args:

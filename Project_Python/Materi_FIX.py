@@ -71,6 +71,7 @@ print("-------------------------------------------------------------------------
 ====BAB 54 (PENGGUNAAN FROM DAN ALIAS(as))
 ====BAB 55 (CARA MENGHITUNG WAKTU EKSEKUSI SUATU FILE DALAM PYTHON)
 ====BAB 56 (MEMBUAT PACKAGE SEDERHANA)
+====BAB 57 (CARA PENGGUNAAN __init__py)
 
 '''
 
@@ -8182,7 +8183,7 @@ print(10*('='), (' 1 '), ('=')*10)
 
 ''' isi hanya print saja'''
 
-import Modul_1 # <-- Modul_1 adah contoh modul
+from Package_1 import Modul_1 # <-- Modul_1 adah contoh modul
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
@@ -8195,7 +8196,7 @@ print(10*('='), (' 2 '), ('=')*10)
 
 ''' isi nya ada datanya bukan hanya print '''
 
-import Modul_2
+from Package_1 import Modul_2
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
@@ -8213,7 +8214,7 @@ print(10*('='), (' 3 '), ('=')*10)
     yang poin no 3 ini sebelum di import belum di print jadi baru di print 
     setelah di import 
 '''
-import Modul_3
+from Package_1 import Modul_3
 print(Modul_3.data_semua )
 
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
@@ -8227,7 +8228,7 @@ print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 print(10*('='), (' 4 '), ('=')*10)
 
-import Modul_4
+from Package_1 import Modul_4
 
 hasil = Modul_4.tambah(10,20)
 print (f"hasilnya = {hasil}")
@@ -8241,7 +8242,7 @@ print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 # 5. contoh penggunaan import 
 
-import Modul_5
+from Package_1 import Modul_5
 
 hasil_tambah = Modul_5.tambah()
 print(f"hasil tambah = {hasil_tambah}")
@@ -8373,7 +8374,7 @@ print("------")
     secara terus menerus. tapi hanya cukup menulis sekali saja yaitu di bagian import 
 '''
 
-from Modul_5 import tambah, kali, pangkat
+from Package_1.Modul_5 import tambah, kali, pangkat
 
 
 hasil_tambah = tambah()
@@ -8403,9 +8404,9 @@ print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 # alias digunakan untuk mengubah nama fungsi yang di import 
 
-from Modul_5 import tambah as terserah_diubah_sesuka_kamu
-from Modul_5 import kali as kali_aghi
-from Modul_5 import pangkat as wdohhhhhhh
+from Package_1.Modul_5 import tambah as terserah_diubah_sesuka_kamu
+from Package_1.Modul_5 import kali as kali_aghi
+from Package_1.Modul_5 import pangkat as wdohhhhhhh
 
 
 hasil_tambah = terserah_diubah_sesuka_kamu() # yang awalnya tambah di aliaskan ke terserah_diubah_sesuka_kamu
@@ -8427,7 +8428,7 @@ print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 # alias digunakan untuk mengubah module yang di import
 
-import Modul_5 as module_lima
+from Package_1 import Modul_5 as module_lima
 
 hasil_tambah = module_lima.tambah() # yang awalnya Modul_5 di aliaskan ke module_lima
 print(f"hasil tambah = {hasil_tambah}")
@@ -8749,6 +8750,279 @@ print(f"Hasil tambah = {tambah}")
 print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 57")
+print("------")
+
+'''           ====BAB 57 (CARA PENGGUNAAN __init__py)====
+'''
+
+'''
+    contoh template folder yang saya gunakan, kamu hanya perlu fokus ke folder" tersebut saja
+
+        Package_1/
+        |── __init__.py
+        |── Package_1_1/
+        |   |── __init__.py
+        |   |── penjumlahan.py
+        |   |── pengurangan.py
+        |   |── perkalian.py
+
+'''
+
+''' Saya menggunakan fungsi __init__py'''
+
+'''
+di __init__.py dalam Package_1_1
+
+    from .Penjumlahan import tambah
+    from .Pengurangan import kurang
+    from .Perkalian import kali
+
+    
+
+di __init__.py dalam Package_1
+
+    from .Package_1_1 import tambah, kurang, kali
+
+    
+
+di file Materi_Belum_FIX
+
+    import Package_1
+
+    print(Package_1.tambah(10, 5))   
+    print(Package_1.kurang(10, 5))   
+    print(Package_1.kali(10, 5))     
+
+
+    
+
+intinya fungsi dari __init__ adalah untuk memudahkan kita dalam hal mengimport
+'''
+
+
+
+
+import Package_1
+
+print(Package_1.tambah(10, 5))   # Output: 15
+print(Package_1.kurang(10, 5))   # Output: 5
+print(Package_1.kali(10, 5))     # Output: 50
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+import io
+os.system("cls")
+
+print ("BAB 58")
+print("------")
+
+'''           ====BAB 58 (STANDARD LIBRARY)====
+'''
+
+'''
+    standard library adalah suatu kumpulan kode yang sudah di buat oleh developer python itu sendiri.
+
+    cara mengakses standard library ada di situs resmi python 
+        caranya hanya perlu search: standard library python 
+'''
+
+# contoh penggunaan standard library 
+
+import io # menggunakan (io)
+
+# fungsi (io) adalah untuk membaca suatu file
+
+if os.path.exists("file_text.txt"):
+    with io.open("file_text.txt", "r") as file: # untuk membaca file File_text.txt
+        print(file.read())                      # "r" untuk read atau baca
+else:
+    print("File tidak ditemukan.")
+
+''' file yang akan di baca harus satu folder dengan file yang akan membaca '''
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 
 
