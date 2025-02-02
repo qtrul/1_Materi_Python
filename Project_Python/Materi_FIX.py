@@ -80,6 +80,7 @@ print("-------------------------------------------------------------------------
 ====BAB 63 (Cara Penggunaan __main__.py)
 ====BAB 64 (Membaca File Eksternal dengan open dan with)
 ====BAB 65 (Menulis File Eksternal)
+====BAB 66 (Mengenal Macam-macam error dan try-except)
 
 '''
 
@@ -10195,6 +10196,204 @@ with open("data_3.txt",'r+',encoding="utf-8") as file:
 with open("data_3.txt",'r+',encoding="utf-8") as file:
     file.write("ucup") # menimpa isi text sesuai dengan panjang data
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+os.system("cls")
+
+print ("BAB 66")
+print("------")
+
+'''           ====BAB 66 (Mengenal Macam-macam error dan try-except)====
+'''
+
+'''
+        Exception dalam Python adalah kondisi atau peristiwa yang terjadi saat program berjalan 
+    dan menyebabkan program berhenti secara tiba-tiba jika tidak ditangani. Exception 
+    biasanya muncul karena kesalahan, seperti mencoba membagi angka dengan nol, mengakses 
+    indeks yang tidak ada dalam sebuah list, atau membaca file yang tidak ditemukan.
+
+'''
+
+# Contoh sederhana exception adalah:
+
+        # angka = 10
+        # pembagi = 0
+        # hasil = angka / pembagi  # Ini akan memunculkan ZeroDivisionError
+
+
+'''
+        Untuk mencegah program berhenti tiba-tiba, kita bisa menggunakan blok try-except. Dengan cara 
+    ini, kita bisa menangani error yang muncul dan memberi respon yang sesuai.
+'''
+
+try:
+    angka = 10
+    pembagi = 0
+    hasil = angka / pembagi
+except ZeroDivisionError:
+    print("Tidak bisa membagi dengan nol!")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+
+
+
+# contoh membuat exception
+
+from numbers import Number
+
+def tambah(a,b):
+    if not isinstance(a,Number) or not isinstance(b,Number):
+        raise "input harus angka"
+    return a+b
+
+print(tambah(5,6))
+
+
+
+
+
+
+
+
+
+# contoh aplikasi untuk membuat file data_4.txt 
+try:
+    with open("data_4.txt",'r') as file:
+        print(file.read())
+except:
+    print("file data_4.txt tidak ditemukan, membuat file baru")
+    with open("data_4.txt",'w',encoding='utf-8') as file:
+        file.write("file baru")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
+
+
+
+
+
+
+# contoh di aplikasi
+
+while(True):
+    angka = int(input("masukan angka pembagi: "))
+    try:
+        hasil = 10/angka
+        print(f"hasil = {hasil}")
+        is_done = input("lanjutkan (y/n)? ")
+        if is_done == "n":
+            break
+    except:
+        print("pembagi nol, silahkan masukan input lagi")
+
+print(10*('='), ('Ending'), ('=')*10,"\n\n\n")
 
 
 print ("=======================================")
