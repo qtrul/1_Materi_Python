@@ -1,19 +1,4 @@
-print("")
-print ("PENDAHULUAN")
-print("------------")
-
-'''                    ==== SHORTCUT ====                
-     1. shift + alt + drag                      
-     2. alt + drag                              
-     3. ctrl + D                                
-     4. alt + panah atas/bawah              
-     5. shift + ctrl + panah atas/bawah  
-'''
-
-print("-------------------------------------------------------------------------------------------------------------------")
-
-'''
-                   ==== JUDUL SETIAP BAB ====
+'''                   ==== JUDUL SETIAP BAB ====
 
 ====BAB 1  (Variabel)
 ====BAB 2  (Tipe Data)
