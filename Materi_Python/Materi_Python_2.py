@@ -1,128 +1,23 @@
 '''                   ==== JUDUL SETIAP BAB ====
 
-====BAB 1  (Variabel)
-====BAB 2  (Tipe Data)
+
+====BAB 1  (Casting atau Mengubah Tipe Data)
+====BAB 2  (Input atau Mengambil Tipe Data)
 ====BAB 3  (Tipe Data Khusus)
-====BAB 4  (Casting atau Mengubah Tipe Data)
-====BAB 5  (Input atau Mengambil Tipe Data)
-====BAB 6  (Operasi Aritmatika)
-====BAB 7  (Pengaplikasian Operasi Aritmatika)
-====BAB 8  (Operasi Komparasi)
-====BAB 9  (Operasi Logika atau Boolean)
-====BAB 10 (Operasi Logika dan Komparasi)
-====BAB 11 (Bitwise)
-====BAB 12 (Pengenalan String)
-====BAB 13 (Operasi dan Manupulasi String)
-====BAB 14 (Operator Dalam Bentuk Metode)
-====BAB 15 (Format String)
-====BAB 16 (String Width and Multiline)
-====BAB 17 (Date and Time)
-====BAB 18 (if and else statement)
-====BAB 19 (elif = else if statement)
-====BAB 20 (Membuat Kalkulator Sederhana)
-====BAB 21 (for loop (perulangan))
-====BAB 22 (while loop)
-====BAB 23 (continue and pass)
-====BAB 24 (break)
-====BAB 25 (Latihan loop (for and while))
-====BAB 26 (Latihan Membuat Bangun Datar Menggunakan loop)
-====BAB 27 (list)
-====BAB 28 (manipulasi list)
-====BAB 29 (Operasi list)
-====BAB 30 (Cara Menduplikat list)
-====BAB 31 (Membuat list di Dalam list)
-====BAB 32 (Menduplikat list Menggunakan depp copy)       
-====BAB 33 (looping dari list)
-====BAB 34 (Latihan list Sederhana)
-====BAB 35 (tuples dan sets)
-====BAB 36 (dictionary (dict))
-====BAB 37 (Operasi pada dictionary)
-====BAB 38 (looping dictionary)
-====BAB 39 (copy and pop dictionary)
-====BAB 40 (multi keys dan nesting dictionary)
-====BAB 41 (Latihan dictionary part 1)
-====BAB 42 (Latihan dictionary part 2)
-====BAB 43 (Pengenalan fungsi)
-====BAB 44 (fungsi Dengan argument)
-====BAB 45 (fungsi Dengan return)
-====BAB 46 (default argumen fungsi)
-====BAB 47 (Latihan fungsi)
-====BAB 48 (Penggunaan type hints pada fungsi)
-====BAB 49 (Penggunaan *args)
-====BAB 50 (Penggunaan **kwargs)
-====BAB 51 (fungsi lambda dan anonymous)
-====BAB 52 (global dan locak scope)
-====BAB 53 (import statement)
-====BAB 54 (Penggunaan from dan alias(as))
-====BAB 55 (Cara Menghitung Waktu Eksekusi Suatu File Dalam Python)
-====BAB 56 (Membuat package Sederhana)
-====BAB 57 (Cara Penggunaan __init__.py)
-====BAB 58 (standard library)
-====BAB 59 (tkinter)
-====BAB 60 (Mengenal pip)
-====BAB 61 (Package Numpy (contoh PIP))
-====BAB 62 (Membuat Game sederhana Menggunakan Pygame)
-====BAB 63 (Cara Penggunaan __main__.py)
-====BAB 64 (Membaca File Eksternal dengan open dan with)
-====BAB 65 (Menulis File Eksternal)
-====BAB 66 (Mengenal Macam-macam error dan try-except)
-
+====BAB 4  (Operasi Aritmatika)
+====BAB 5  (Operasi Komparasi)
+====BAB 6  (Operasi Logika)
+====BAB 7  (String)
+====BAB 8  (Percabangan)
+====BAB 9  (Perulangan (for loop & while loop))
+====BAB 10 (continue, pass, and break)
+====BAB 11 (list, tuples, and sets)
+====BAB 12 (dictionary (dict))
+====BAB 13 (Fungsi)
+====BAB 14 (Tambahan)
+====BAB 15 (Latihan)
 '''
-
 '''-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -238,7 +133,7 @@ os.system('cls')
 
 print ("BAB 1")
 print("------")
-'''             ====BAB 1  (Casting atau Mengubah Tipe Data))====            '''
+'''             ====BAB 1  (Casting atau Mengubah Tipe Data)====            '''
 print ("====INTEGER====")
 
 #   1. Mengubah tipe data "integer" ke tipe data lain
